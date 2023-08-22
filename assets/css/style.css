@@ -80,11 +80,11 @@ body {
 
 /* Trang chủ */
 
-#logo{
+#logo {
   text-align: center;
 }
 
-#logo img{
+#logo img {
   width: 200px;
 }
 
@@ -182,23 +182,23 @@ body {
   background-color: #DBF4F6;
 }
 
-#feature .fe-box:nth-child(2) h6{
+#feature .fe-box:nth-child(2) h6 {
   background-color: #F6DBEA;
 }
 
-#feature .fe-box:nth-child(3) h6{
+#feature .fe-box:nth-child(3) h6 {
   background-color: #EAF5D8;
 }
 
-#feature .fe-box:nth-child(4) h6{
+#feature .fe-box:nth-child(4) h6 {
   background-color: #DEEEF9;
 }
 
-#feature .fe-box:nth-child(5) h6{
+#feature .fe-box:nth-child(5) h6 {
   background-color: #E3DDF4;
 }
 
-#feature .fe-box:nth-child(6) h6{
+#feature .fe-box:nth-child(6) h6 {
   background-color: #F6E5DB;
 }
 
@@ -289,25 +289,38 @@ body {
   justify-content: space-between;
 }
 #profile .profile-details {
-  background-color: #cce7d0;
+  background-color: #D8D9DA;
   width: 15%;
 }
 
-#profile .profile-details .company{
+#profile .profile-details .company {
   text-align: center;
 }
 
-#profile .profile-details .people{
+#profile .profile-details .people {
   text-align:left;
 }
 
-#profile .profile-details .card{
+#profile .profile-details .card {
   text-align: center;
 }
 
-#profile .profile-details .card img{
+#profile .profile-details .card img {
   text-align: center;
-  border: #0864f8 1px solid;
+  border: #D8D9DA 1px solid;
   border-radius: 50%;
 }
 
+#profile .info-details {
+  background-color: #91C8E4;
+  width: 84.5%;
+}
+
+#profile .info-details .row .col-3{
+  display: flex;
+  flex-direction: column;
+}
+
+#profile .info-details .row input{
+  width: 200px;
+}

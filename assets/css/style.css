@@ -312,15 +312,44 @@ body {
 }
 
 #profile .info-details {
-  background-color: #91C8E4;
+  background-color: #fbfbfb;
   width: 84.5%;
 }
 
-#profile .info-details .row .col-3{
+#profile .info-details .f-grid .f-grid-col{
   display: flex;
   flex-direction: column;
 }
 
-#profile .info-details .row input{
-  width: 200px;
+#profile .info-details .f-grid input,
+#profile .info-details .f-grid select,
+#profile .info-details .row input,
+#profile .info-details .row select {
+  width: 250px;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid;
+}
+
+.f-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -1rem;
+  flex-flow: row wrap;
+}
+
+.f-grid-col {
+  flex: 1 0;
+  background-color: #fbfbfb;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.row{
+  display: flex;
+}
+
+.details{
+  padding: 5px;
 }

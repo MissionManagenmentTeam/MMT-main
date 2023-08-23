@@ -61,6 +61,20 @@ button.normal {
   transition: 0.2s;
 }
 
+button.table {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 10px;
+  color: #000;
+  background: #0864f8;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+  width: 100px;
+}
+
 button.white {
   font-size: 13px;
   font-weight: 600;
@@ -356,9 +370,26 @@ body {
 }
 
 .row{
-  display: flex;
+  text-align: end;
+}
+
+.row button{
+  text-align: start;
+}
+
+.row button:hover{
+  background-color: #088178;
+  color: #fff;
+}
+
+.row i{
+  padding:0 2px 0 0;
 }
 
 .details{
   padding: 5px;
+}
+
+.normal:hover{
+  color: #0864f8;
 }

@@ -301,6 +301,15 @@ body {
   text-align:left;
 }
 
+#profile .profile-details .people .details{
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+
+#profile .profile-details .people .details h5{
+  padding:0 0 0 15px;
+}
+
 #profile .profile-details .card {
   text-align: center;
 }
@@ -326,8 +335,8 @@ body {
 #profile .info-details .row input,
 #profile .info-details .row select {
   width: 250px;
-  height: 30px;
-  border-radius: 4px;
+  height: 25px;
+  border-radius: 3px;
   border: 1px solid;
 }
 

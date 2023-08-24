@@ -395,3 +395,89 @@ body {
 .normal:hover{
   color: #0864f8;
 }
+
+
+#profile {
+  padding-top: 10px;
+  overflow-x: auto;
+}
+
+#profile table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+#profile table td {
+  height: 50px;
+}
+
+
+#profile table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#profile table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+  color: green;
+  font-weight: bold;
+}
+#profile table td:nth-child(3) {
+  width: 250px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#profile table td:nth-child(4),
+#profile table td:nth-child(5),
+#profile table td:nth-child(6){
+  width: 150px;
+  text-align: center;
+}
+
+#profile table td:nth-child(6){
+  color: green;
+  font-weight: bold;
+}
+
+#profile table thead {
+  border: 1px solid #e2e9e1;
+  height: 40px;
+  border-left: none;
+  border-right: none;
+}
+
+#profile table thead td {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+}
+
+#profile table tbody td {
+  border: 1px solid #e2e9e1;
+  height: 40px;
+  border-left: none;
+  border-right: none;
+}
+
+#profile table tbody tr td {
+  padding-top: 15px;
+}
+
+#profile table tbody td {
+  font-size: 13px;
+}
+
+.ktkl{
+  padding-top: 15px;
+}
+
+.ktkl label{
+  padding:0 0 0 10px;
+  font-weight: bold;
+}
+

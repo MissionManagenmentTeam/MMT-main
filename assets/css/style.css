@@ -487,3 +487,9 @@ body {
   font-weight: bold;
 }
 
+
+
+#chart {
+  max-width: 650px;
+  margin: 35px auto;
+}

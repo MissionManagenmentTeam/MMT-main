@@ -66,7 +66,7 @@ button.table {
   font-weight: 600;
   padding: 10px 10px;
   color: #000;
-  background: #0864f8;
+  background: #5cdaeb;
   border-radius: 4px;
   cursor: pointer;
   border: none;
@@ -239,7 +239,6 @@ body {
 }
 .tab-wrapper ul li a{
   color: #fff;
-  text-transform: uppercase;
   text-decoration: none;
 }
 
@@ -381,7 +380,7 @@ body {
 }
 
 .row button:hover{
-  background-color: #088178;
+  background-color: #66a5c9;
   color: #fff;
 }
 

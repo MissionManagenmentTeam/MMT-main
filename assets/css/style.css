@@ -108,9 +108,8 @@ body {
   justify-content: space-between;
   padding: 20px 80px;
   background: #d9f3f1;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06); */
   z-index: 999;
-  position: sticky;
   top: 0;
   left: 0;
 }
@@ -217,27 +216,32 @@ body {
 }
 
 /* Nhân sự */
-
-#table .container .tab {
-  display: flex;
-  justify-content: center;
+.tab-wrapper ul{
+  overflow: hidden;
+  background: #fbfbfb;
+  margin: 0px;
+  padding: 0px;
 }
-
-#table button:hover,
-#table button.active {
-  color: #0864f8;
+.tab-wrapper ul li{
+  float: left;
+  list-style: none;
+  padding: 10px 20px;
+  background: #66a5c9;
+  border-radius: 10px 10px 0px 0px;
+  margin-right: 5px;
+  margin-top: 5px;
 }
-
-/* #table button.active::after,
-#table button:hover::after {
-  content: "";
-  width: 30%;
-  height: 2px;
-  background: #0864f8;
-  position: absolute;
-  bottom: -4px;
-  left: 20px;
-} */
+.tab-wrapper ul li.active{
+  background: #5cdaeb;
+}
+.tab-wrapper ul li.active a{
+  color: #000;
+}
+.tab-wrapper ul li a{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 
 #table {
   padding-top: 10px;
@@ -299,11 +303,10 @@ body {
 
 #profile {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 #profile .profile-details {
-  background-color: #D8D9DA;
+  background-color: #fbfbfb;
   width: 15%;
 }
 
@@ -330,7 +333,7 @@ body {
 
 #profile .profile-details .card img {
   text-align: center;
-  border: #D8D9DA 1px solid;
+  border: #fbfbfb 1px solid;
   border-radius: 50%;
 }
 

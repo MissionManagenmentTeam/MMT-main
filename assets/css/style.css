@@ -34,10 +34,25 @@ h6 {
   font-size: 12px;
 }
 
-p {
-  font-size: 16px;
-  color: #465b52;
-  margin: 15px 0 20px 0;
+p.lb1 {
+  font-size: 15px;
+  margin: 5px 0 5px 0;
+}
+
+p.lb2 {
+  font-size: 15px;
+  color: green;
+  font-weight: bold;
+}
+
+p.lb3 {
+  font-size: 13px;
+  color: red; 
+}
+
+p.lb4 {
+  font-size: 13px;
+  color: blue;
 }
 
 .section-p1 {
@@ -255,12 +270,12 @@ body {
 
 #table table {
   border-collapse: collapse;
-  table-layout: fixed;
+  /* table-layout: fixed; */
   white-space: nowrap;
 }
 
 #table table td:nth-child(1) {
-  width: 100px;
+  width: 10px;
   text-align: center;
 }
 
@@ -277,7 +292,9 @@ body {
 #table table td:nth-child(5),
 #table table td:nth-child(6),
 #table table td:nth-child(7),
-#table table td:nth-child(8) {
+#table table td:nth-child(8),
+#table table td:nth-child(9),
+#table table td:nth-child(10) {
   width: 150px;
   text-align: center;
 }

@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quản lý nhân sự và đánh giá</title>
+    <title>Phúc lợi</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -21,6 +23,91 @@
             </ul>
         </div>
         <a href="#"><img src="assets/img/logo.png" class="logo" alt="" width="35" height="35"></a>
+    </section>
+
+    <section id="table">
+        <div class="container">
+            <div class="tab-wrapper">
+                <ul class="tab">
+                    <li>
+                        <a href="#tab-main-info">Danh sách bảo hiểm</a>
+                    </li>
+                    <li>
+                        <a href="#tab-image">Hình ảnh</a>
+                    </li>
+                    <li>
+                        <a href="#tab-seo">SEO</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-item" id="tab-main-info">
+                        <table width="100%">
+                            <thead>
+                                <th>STT</th>
+                                <th>Số sổ BH</th>
+                                <th>Nhân viên</th>
+                                <th>Phòng ban</th>
+                                <th>Số thẻ BH Y tế</th>
+                                <th>Nộp sổ BH</th>
+                                <th>Nơi đăng kí khám bệnh</th>
+                                <th>Mức đóng</th>
+                                <th>Thời gian</th>
+                                <th>Thao tác</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <p class="lb1">777403125</p>
+                                        <p class="lb2">Đang tham gia</p>
+                                    </td>
+                                    <td><i class='bx bxs-user'></i> Huỳnh Thái Dân</td>
+                                    <td><i class='bx bxs-business'></i> Phòng hành chính</td>
+                                    <td>1234567890</td>
+                                    <td>Không</td>
+                                    <td><i class='bx bx-plus-medical'></i> Bệnh viện Gò Vấp</td>
+                                    <td><i class='bx bx-money'></i> 500.000</td>
+                                    <td>
+                                        <p class="lb3">Từ: 01/01/2021</p>
+                                        <p class="lb4">Đến: 31/12/2021</p>
+                                    </td>
+                                    <td>
+                                        <button class="normal"><i class="fa-solid fa-rotate-right"></i></button>
+                                        <button class="normal"><i class="fa-solid fa-xmark"></i></button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <p class="lb1">777403125</p>
+                                        <p class="lb2">Đang tham gia</p>
+                                    </td>
+                                    <td><i class='bx bxs-user'></i> Huỳnh Thái Dân</td>
+                                    <td><i class='bx bxs-business'></i> Phòng hành chính</td>
+                                    <td>1234567890</td>
+                                    <td>Không</td>
+                                    <td><i class='bx bx-plus-medical'></i> Bệnh viện Gò Vấp</td>
+                                    <td><i class='bx bx-money'></i> 500.000</td>
+                                    <td>
+                                        <p class="lb3">Từ: 01/01/2021</p>
+                                        <p class="lb4">Đến: 31/12/2021</p>
+                                    </td>
+                                    <td>
+                                        <button class="normal"><i class="fa-solid fa-rotate-right"></i></button>
+                                        <button class="normal"><i class="fa-solid fa-xmark"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-item" id="tab-image">
+                    </div>
+                    <div class="tab-item" id="tab-seo">
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <script src="assets/js/main.js"></script>
 </body>

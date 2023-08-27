@@ -247,7 +247,8 @@ body {
   float: left;
   list-style: none;
   padding: 10px 20px;
-  background: #66a5c9;
+  /* background: #66a5c9; */
+  background: none;
   border-radius: 10px 10px 0px 0px;
   margin-right: 5px;
   margin-top: 5px;
@@ -259,7 +260,8 @@ body {
   color: #000;
 }
 .tab-wrapper ul li a{
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
   text-decoration: none;
 }
 

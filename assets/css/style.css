@@ -372,6 +372,7 @@ body {
 #profile .info-details .f-grid input,
 #profile .info-details .f-grid select,
 #profile .info-details .row input,
+#profile .info-details .ktkl select,
 #profile .info-details .row select {
   width: 250px;
   height: 25px;
@@ -427,7 +428,7 @@ body {
 
 #profile table {
   border-collapse: collapse;
-  table-layout: fixed;
+  /* table-layout: fixed; */
   white-space: nowrap;
 }
 
@@ -437,21 +438,17 @@ body {
 
 
 #profile table td:nth-child(1) {
-  width: 100px;
+  width: 10px;
   text-align: center;
-  font-weight: bold;
 }
 
 #profile table td:nth-child(2) {
   width: 150px;
   text-align: center;
-  color: green;
-  font-weight: bold;
 }
 #profile table td:nth-child(3) {
   width: 250px;
   text-align: center;
-  font-weight: bold;
 }
 
 #profile table td:nth-child(4),
@@ -463,7 +460,6 @@ body {
 
 #profile table td:nth-child(6){
   color: green;
-  font-weight: bold;
 }
 
 #profile table thead {
@@ -495,16 +491,22 @@ body {
   font-size: 13px;
 }
 
-.ktkl{
+.venus{
   padding-top: 15px;
 }
 
-.ktkl label{
+.venus label{
   padding:0 0 0 10px;
   font-weight: bold;
 }
 
-
+.venus-tab{
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.venus-tab input{
+  height: 25px;
+}
 
 #chart {
   max-width: 650px;

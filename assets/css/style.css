@@ -129,6 +129,14 @@ body {
   left: 0;
 }
 
+#header li {
+  list-style: none;
+}
+
+#header li a:hover{
+  color: #000;
+}
+
 #navbar {
   display: flex;
   align-items: center;

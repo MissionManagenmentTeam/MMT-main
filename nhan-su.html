@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nhân sự</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/nhan-su.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -23,191 +24,150 @@
         <a href="#"><img src="assets/img/logo.png" class="logo" alt="" width="35" height="35"></a>
     </section>
     <section id="table">
-        <div class="container">
-            <div class="tab-wrapper">
-                <ul class="tab">
-                    <li>
-                        <a href="#tab-main-info">Danh sách nhân viên</a>
-                    </li>
-                    <li>
-                        <a href="#tab-image">Hình ảnh</a>
-                    </li>
-                    <li>
-                        <a href="#tab-seo">SEO</a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-item" id="tab-main-info">
-                        <table width="100%">
-                            <thead>
-                                <th>STT</th>
-                                <th>Hình ảnh</th>
-                                <th>Nhân viên</th>
-                                <th>Phòng ban</th>
-                                <th>Liên hệ</th>
-                                <th>Ngân hàng</th>
-                                <th>Trình độ</th>
-                                <th>Thao tác</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td><img src="assets/img/avt1.jpg" width="60" height="70"></td>
-                                    <td>Huỳnh Thái Dân</td>
-                                    <td>Hành chính</td>
-                                    <td>danhtps19893@fpt.edu.vn</td>
-                                    <td>TP Bank</td>
-                                    <td>Đại học - Cao đẳng</td>
-                                    <td>
-                                        <button class="normal"><i class="fa-solid fa-rotate-right"
-                                                onclick="window.location.href='nhan-vien.html'"></i></button>
-                                        <button class="normal"><i class="fa-solid fa-xmark"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td><img src="assets/img/avt1.jpg" width="60" height="70"></td>
-                                    <td>Huỳnh Thái Dân</td>
-                                    <td>Hành chính</td>
-                                    <td>danhtps19893@fpt.edu.vn</td>
-                                    <td>TP Bank</td>
-                                    <td>Đại học - Cao đẳng</td>
-                                    <td>
-                                        <button class="normal"><i class="fa-solid fa-rotate-right"></i></button>
-                                        <button class="normal"><i class="fa-solid fa-xmark"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td><img src="assets/img/avt1.jpg" width="60" height="70"></td>
-                                    <td>Huỳnh Thái Dân</td>
-                                    <td>Hành chính</td>
-                                    <td>danhtps19893@fpt.edu.vn</td>
-                                    <td>TP Bank</td>
-                                    <td>Đại học - Cao đẳng</td>
-                                    <td>
-                                        <button class="normal"><i class="fa-solid fa-rotate-right"></i></button>
-                                        <button class="normal"><i class="fa-solid fa-xmark"></i></button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="tab-item" id="tab-image">
-                        <table width="100%">
-                            <thead>
-                                <th>STT</th>
-                                <th>Hình ảnh</th>
-                                <th>Nhân viên</th>
-                                <th>Phòng ban</th>
-                                <th>Liên hệ</th>
-                                <th>Ngân hàng</th>
-                                <th>Trình độ</th>
-                                <th>Thao tác</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td><img src="assets/img/avt1.jpg" width="60" height="70"></td>
-                                    <td>Huỳnh Thái Dân</td>
-                                    <td>Hành chính</td>
-                                    <td>danhtps19893@fpt.edu.vn</td>
-                                    <td>TP Bank</td>
-                                    <td>Đại học - Cao đẳng</td>
-                                    <td>
-                                        <button class="normal"><i class="fa-solid fa-rotate-right"></i></button>
-                                        <button class="normal"><i class="fa-solid fa-xmark"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td><img src="assets/img/avt1.jpg" width="60" height="70"></td>
-                                    <td>Huỳnh Thái Dân</td>
-                                    <td>Hành chính</td>
-                                    <td>danhtps19893@fpt.edu.vn</td>
-                                    <td>TP Bank</td>
-                                    <td>Đại học - Cao đẳng</td>
-                                    <td>
-                                        <button class="normal"><i class="fa-solid fa-rotate-right"></i></button>
-                                        <button class="normal"><i class="fa-solid fa-xmark"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td><img src="assets/img/avt1.jpg" width="60" height="70"></td>
-                                    <td>Huỳnh Thái Dân</td>
-                                    <td>Hành chính</td>
-                                    <td>danhtps19893@fpt.edu.vn</td>
-                                    <td>TP Bank</td>
-                                    <td>Đại học - Cao đẳng</td>
-                                    <td>
-                                        <button class="normal"><i class="fa-solid fa-rotate-right"></i></button>
-                                        <button class="normal"><i class="fa-solid fa-xmark"></i></button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="tab-item" id="tab-seo">
-                        <table width="100%">
-                            <thead>
-                                <th>STT</th>
-                                <th>Hình ảnh</th>
-                                <th>Nhân viên</th>
-                                <th>Phòng ban</th>
-                                <th>Liên hệ</th>
-                                <th>Ngân hàng</th>
-                                <th>Trình độ</th>
-                                <th>Thao tác</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>2</td>
-                                    <td><img src="assets/img/avt1.jpg" width="60" height="70"></td>
-                                    <td>Huỳnh Thái Dân</td>
-                                    <td>Hành chính</td>
-                                    <td>danhtps19893@fpt.edu.vn</td>
-                                    <td>TP Bank</td>
-                                    <td>Đại học - Cao đẳng</td>
-                                    <td>
-                                        <button class="normal"><i class="fa-solid fa-rotate-right"></i></button>
-                                        <button class="normal"><i class="fa-solid fa-xmark"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td><img src="assets/img/avt1.jpg" width="60" height="70"></td>
-                                    <td>Huỳnh Thái Dân</td>
-                                    <td>Hành chính</td>
-                                    <td>danhtps19893@fpt.edu.vn</td>
-                                    <td>TP Bank</td>
-                                    <td>Đại học - Cao đẳng</td>
-                                    <td>
-                                        <button class="normal"><i class="fa-solid fa-rotate-right"></i></button>
-                                        <button class="normal"><i class="fa-solid fa-xmark"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td><img src="assets/img/avt1.jpg" width="60" height="70"></td>
-                                    <td>Huỳnh Thái Dân</td>
-                                    <td>Hành chính</td>
-                                    <td>danhtps19893@fpt.edu.vn</td>
-                                    <td>TP Bank</td>
-                                    <td>Đại học - Cao đẳng</td>
-                                    <td>
-                                        <button class="normal"><i class="fa-solid fa-rotate-right"></i></button>
-                                        <button class="normal"><i class="fa-solid fa-xmark"></i></button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+        <section class="table__header">
+            <div class="input-group">
+                <input type="search" placeholder="Search...">
+                <img src="assets/img/search.png" alt="">
+            </div>
+            <div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">
+                    <label>Export As &nbsp; &#10140;</label>
+                    <label for="export-file" id="toPDF">PDF <img src="assets/img/pdf.png" alt=""></label>
+                    <label for="export-file" id="toJSON">JSON <img src="assets/img/json.png" alt=""></label>
+                    <label for="export-file" id="toCSV">CSV <img src="assets/img/csv.png" alt=""></label>
+                    <label for="export-file" id="toEXCEL">EXCEL <img src="assets/img/excel.png" alt=""></label>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> STT <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Ảnh <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Nhân viên <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Phòng ban <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Liên hệ <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Trình độ <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Thao tác <span class="icon-arrow">&UpArrow;</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1 </td>
+                        <td> <img src="assets/img/avt1.jpg" alt=""></td>
+                        <td> Huỳnh Thái Dân </td>
+                        <td> Kinh doanh </td>
+                        <td> 0969792731 </td>
+                        <td>
+                            <p class="status delivered">Cao đẳng</p>
+                        </td>
+                        <td>
+                            <strong onclick="window.location.href='nhan-vien.html'">Sửa</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td><img src="assets/img/avt1.jpg" alt=""></td>
+                        <td> Huỳnh Thái Dân </td>
+                        <td> Nhân sự </td>
+                        <td> 0969792731 </td>
+                        <td>
+                            <p class="status delivered">Cao đẳng</p>
+                        </td>
+                        <td> <i class="fa-solid fa-rotate-right"></i></td>
+                    </tr>
+                    <tr>
+                        <td> 3</td>
+                        <td><img src="assets/img/avt1.jpg" alt=""></td>
+                        <td> Huỳnh Thái Dân </td>
+                        <td> Kỹ thuật </td>
+                        <td> 0969792731 </td>
+                        <td>
+                            <p class="status cancelled">Đại học</p>
+                        </td>
+                        <td> <i class="fa-solid fa-rotate-right" onclick="window.location.href='nhan-vien.html'"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 4</td>
+                        <td><img src="assets/img/avt1.jpg" alt=""></td>
+                        <td> Huỳnh Thái Dân </td>
+                        <td> Marketing </td>
+                        <td> 0969792731 </td>
+                        <td>
+                            <p class="status cancelled">Đại học</p>
+                        </td>
+                        <td> <i class="fa-solid fa-rotate-right" onclick="window.location.href='nhan-vien.html'"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 5</td>
+                        <td><img src="assets/img/avt1.jpg" alt=""></td>
+                        <td> Huỳnh Thái Dân </td>
+                        <td> Tài chính </td>
+                        <td> 0969792731 </td>
+                        <td>
+                            <p class="status cancelled">Đại học</p>
+                        </td>
+                        <td> <i class="fa-solid fa-rotate-right" onclick="window.location.href='nhan-vien.html'"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 6</td>
+                        <td><img src="assets/img/avt1.jpg" alt=""></td>
+                        <td> Huỳnh Thái Dân </td>
+                        <td> Lưu trữ </td>
+                        <td> 0969792731 </td>
+                        <td>
+                            <p class="status delivered">Cao đẳng</p>
+                        </td>
+                        <td> <i class="fa-solid fa-rotate-right" onclick="window.location.href='nhan-vien.html'"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 7</td>
+                        <td><img src="assets/img/avt1.jpg" alt=""></td>
+                        <td> Huỳnh Thái Dân </td>
+                        <td> Truyền thông </td>
+                        <td> 0969792731 </td>
+                        <td>
+                            <p class="status cancelled">Đại học</p>
+                        </td>
+                        <td> <i class="fa-solid fa-rotate-right" onclick="window.location.href='nhan-vien.html'"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 8</td>
+                        <td><img src="assets/img/avt1.jpg" alt=""></td>
+                        <td> Huỳnh Thái Dân </td>
+                        <td> Thiết kế </td>
+                        <td> 0969792731 </td>
+                        <td>
+                            <p class="status delivered">Cao đẳng</p>
+                        </td>
+                        <td> <i class="fa-solid fa-rotate-right" onclick="window.location.href='nhan-vien.html'"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="assets/img/avt1.jpg" alt=""></td>
+                        <td> Huỳnh Thái Dân </td>
+                        <td> Bla bla </td>
+                        <td> 0969792731 </td>
+                        <td>
+                            <p class="status cancelled">Đại học</p>
+                        </td>
+                        <td> <i class="fa-solid fa-rotate-right"></i> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </section>
-    <script src="assets/js/nhan-vien.js"></script>
+    <!-- <script src="assets/js/nhan-vien.js"></script> -->
+    <script src="assets/js/nhan-su.js"></script>
 </body>
 
 </html>

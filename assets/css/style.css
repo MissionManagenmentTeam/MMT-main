@@ -173,16 +173,55 @@ body {
   left: 20px;
 }
 
-#mobile {
-  display: none;
-  align-items: center;
-
+#menu {
+  list-style: none;
+  height: 48px;
 }
-
-#close {
-  display: none;
+#menu li a {
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 15px;
+  color: #000;
+  background-color: none;
 }
-
+#menu > li {
+  float: left;
+  position: relative;
+}
+#menu > li > ul.dropdown_menu { 
+  position: absolute;
+  list-style: none;
+  display: none;
+  width: 200px;
+  color: #080808;
+}
+#menu > li:hover > a {
+  background-color: none;
+  border-bottom: 2px solid #f4f808;
+}
+/* #menu > li:hover > ul.dropdown_menu {
+  z-index: 100;
+} */
+ul.dropdown_menu > li {
+  position: relative;
+}
+ul.dropdown_menu > li > ul.submenu {
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  left: 200px;
+}
+ul.dropdown_menu > li:hover {
+  background-color: #245ca7;
+}
+ul.dropdown_menu > li:hover > ul.submenu {
+  z-index: 100; 
+}
+/* ul.submenu > li:hover > a {
+  background-color: #5C5C5C !important;
+} */
 #feature {
   display: flex;
   align-items: center;

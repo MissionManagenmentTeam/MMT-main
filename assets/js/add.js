@@ -83,4 +83,4 @@ function renderCity(data) {
     };
 }
 
-// Tạm trua
+// Tạm tru

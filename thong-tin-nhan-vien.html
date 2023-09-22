@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhân viên</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/thong-tin-nhan-vien.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+
+<body style="background-color: #fbfbfb;">
+    <section id="header">
+        <a href="#"><img src="assets/img/logo1.jpg" class="logo" alt="" height="35"></a>
+
+        <div>
+            <ul id="menu">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-user"></i>
+                    </a>
+                    <ul class="dropdown_menu">
+                        <li>
+                            <a href="login.html">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="member">
+        <div class="btn">
+            <h3>Nhân viên/mới</h3>
+            <div>
+                <button class="save"><i class="fa-solid fa-check"></i>Lưu</button>
+                <button class="cancel"><i class="fa-solid fa-xmark"></i>Hủy</button>
+            </div>
+        </div>
+        <br>
+        <label for=""><i class="fa-solid fa-circle-info"></i>Thông tin nhân viên</label>
+        <hr>
+        <div class="profile">
+            <div>
+                <div class="profile-details">
+                    <label>Phòng ban</label>
+                    <select>
+                        <option value="">Phòng Tài chính - Kế toán</option>
+                    </select>
+                </div>
+                <div class="profile-infomation">
+                    <div class="f-grid">
+                        <div class="f-grid-col">
+                            <div class="details">
+                                <label for="">Họ khai sinh</label>
+                                <input type="text">
+                            </div>
+                            <div class="details">
+                                <label for="">Bí danh</label>
+                                <input type="text" id="inp">
+                            </div>
+                            <div class="details">
+                                <label for="">Ngày sinh</label>
+                                <input type="date">
+                            </div>
+                            <div class="details">
+                                <label for="">Giới tính</label>
+                                <select name="" id="">
+                                    <option value="0">Chọn giới tính</option>
+                                    <option value="1">Nam</option>
+                                    <option value="2">Nữ</option>
+                                    <option value="3">Khác</option>
+                                </select>
+                            </div>
+                            <div class="details">
+                                <label for="">Tỉnh/Thành phố quê quán</label>
+                                <select id="tinh">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>
+                            <div class="details">
+                                <label for="">Tỉnh/Thành phố thường trú</label>
+                                <select id="province">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="f-grid-col">
+                            <div class="details">
+                                <label for="">Tên khai sinh</label>
+                                <input type="text">
+                            </div>
+                            <div class="details">
+                                <label for="">Quốc tịch</label>
+                                <input type="text">
+                            </div>
+                            <div class="details">
+                                <label for="">CCCD/CMND</label>
+                                <input type="number">
+                            </div>
+                            <div class="details">
+                                <label for="">Hình ảnh cá nhân</label>
+                                <input type="file">
+                            </div>
+                            <div class="details">
+                                <label for="">Huyện/Quận quê quán</label>
+                                <select id="huyen">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>
+                            <div class="details">
+                                <label for="">Huyện/Quận thường trú</label>
+                                <select id="district">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="f-grid-col">
+                            <img src="assets/img/nhalinh.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="profile-details">
+                    <label>Phòng ban</label>
+                    <select>
+                        <option value="">Phòng Tài chính - Kế toán</option>
+                    </select>
+                </div>
+                <div class="profile-infomation">
+                    <div class="f-grid">
+                        <div class="f-grid-col">
+                            <div class="details">
+                                <label for="">Họ khai sinh</label>
+                                <input type="text">
+                            </div>
+                            <div class="details">
+                                <label for="">Bí danh</label>
+                                <input type="text" id="inp">
+                            </div>
+                            <div class="details">
+                                <label for="">Ngày sinh</label>
+                                <input type="date">
+                            </div>
+                            <div class="details">
+                                <label for="">Giới tính</label>
+                                <select name="" id="">
+                                    <option value="0">Chọn giới tính</option>
+                                    <option value="1">Nam</option>
+                                    <option value="2">Nữ</option>
+                                    <option value="3">Khác</option>
+                                </select>
+                            </div>
+                            <div class="details">
+                                <label for="">Tỉnh/Thành phố quê quán</label>
+                                <select id="tinh">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>
+                            <div class="details">
+                                <label for="">Tỉnh/Thành phố thường trú</label>
+                                <select id="province">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="f-grid-col">
+                            <div class="details">
+                                <label for="">Tên khai sinh</label>
+                                <input type="text">
+                            </div>
+                            <div class="details">
+                                <label for="">Quốc tịch</label>
+                                <input type="text">
+                            </div>
+                            <div class="details">
+                                <label for="">CCCD/CMND</label>
+                                <input type="number">
+                            </div>
+                            <div class="details">
+                                <label for="">Hình ảnh cá nhân</label>
+                                <input type="file">
+                            </div>
+                            <div class="details">
+                                <label for="">Huyện/Quận quê quán</label>
+                                <select id="huyen">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>
+                            <div class="details">
+                                <label for="">Huyện/Quận thường trú</label>
+                                <select id="district">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="f-grid-col">
+                            <img src="assets/img/nhalinh.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="profile-details">
+                    <label>Phòng ban</label>
+                    <select>
+                        <option value="">Phòng Tài chính - Kế toán</option>
+                    </select>
+                </div>
+                <div class="profile-infomation">
+                    <div class="f-grid">
+                        <div class="f-grid-col">
+                            <div class="details">
+                                <label for="">Họ khai sinh</label>
+                                <input type="text">
+                            </div>
+                            <div class="details">
+                                <label for="">Bí danh</label>
+                                <input type="text" id="inp">
+                            </div>
+                            <div class="details">
+                                <label for="">Ngày sinh</label>
+                                <input type="date">
+                            </div>
+                            <div class="details">
+                                <label for="">Giới tính</label>
+                                <select name="" id="">
+                                    <option value="0">Chọn giới tính</option>
+                                    <option value="1">Nam</option>
+                                    <option value="2">Nữ</option>
+                                    <option value="3">Khác</option>
+                                </select>
+                            </div>
+                            <div class="details">
+                                <label for="">Tỉnh/Thành phố quê quán</label>
+                                <select id="tinh">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>
+                            <div class="details">
+                                <label for="">Tỉnh/Thành phố thường trú</label>
+                                <select id="province">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="f-grid-col">
+                            <div class="details">
+                                <label for="">Tên khai sinh</label>
+                                <input type="text">
+                            </div>
+                            <div class="details">
+                                <label for="">Quốc tịch</label>
+                                <input type="text">
+                            </div>
+                            <div class="details">
+                                <label for="">CCCD/CMND</label>
+                                <input type="number">
+                            </div>
+                            <div class="details">
+                                <label for="">Hình ảnh cá nhân</label>
+                                <input type="file">
+                            </div>
+                            <div class="details">
+                                <label for="">Huyện/Quận quê quán</label>
+                                <select id="huyen">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>
+                            <div class="details">
+                                <label for="">Huyện/Quận thường trú</label>
+                                <select id="district">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="f-grid-col">
+                            <img src="assets/img/nhalinh.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

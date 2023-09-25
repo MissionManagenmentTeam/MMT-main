@@ -46,3 +46,26 @@ $('#menu > li').hover(function() {
     // khi thẻ dropdown_menu li bị hover thì submenusubmenu thuộc thẻ li đó sẽ trượt lên(ẩnẩn)
     $('.submenu', this).slideUp();
   });
+
+
+
+  const search = () => {
+    const searchBox = document.getElementById("search-item").value.toUpperCase();
+    const memItem = document.getElementById("feature");
+    const member = document.querySelectorAll(".fe-box");
+    const memName = memItem.getElementsByTagName("h6");
+
+    for (var i = 0; i < memName.length; i++) {
+        let match = member[i].getElementsByTagName('h6')[0];
+
+        if (match) {
+            let textValue = match.textContent || match.innerHTML
+
+            if (textValue.toUpperCase().indexOf(searchBox) > -1) {
+                member[i].style.display = "";
+            } else {
+                member[i].style.display = "none";
+            }
+        }
+    }
+}

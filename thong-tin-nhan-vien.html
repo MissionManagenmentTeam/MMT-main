@@ -245,102 +245,136 @@
 
             <div>
                 <div class="profile-details">
-                    <label>Chức danh và nghỉ việc</label>
+                    <label>Chức danh và Nghỉ việc</label>
                 </div>
-                <div class="f-grid">
-                    <div class="f-grid-col">
-                        <label class="title">Quê Quán</label>
-                        <div class="details">
-                            <label for="">Tỉnh/Thành phố quê quán</label>
-                            <select id="tinh">
-                                <option value="">Chọn</option>
-                            </select>
+                <div class="profile-infomation">
+                    <div class="f-grid">
+                        <div class="f-grid-col">
+                            <div class="details">
+                                <label for="">Tên chức danh</label>
+                                <input type="text">
+                            </div>
+                            <div class="details">
+                                <label for="">Bậc lương</label>
+                                <select name="" id=""></select>
+                            </div>
+                            <div class="details">
+                                <label for="">Ngày nghỉ việc</label>
+                                <input type="datetime">
+                            </div>
                         </div>
-                        <div class="details">
-                            <label for="">Huyện/Quận quê quán</label>
-                            <select id="huyen">
-                                <option value="">Chọn</option>
-                            </select>
-                        </div>
-                        <div class="details">
-                            <label for="">Xã/Phường quê quán</label>
-                            <select id="xa">
-                                <option value="" selected>Chọn</option>
-                            </select>
-                        </div>
-                    </div>
 
-                    <div class="f-grid-col">
-                        <label class="title">Liên Lạc</label>
-                        <div class="details">
-                            <label for="">Số điện thoại gia đình</label>
-                            <input type="number">
-                        </div>
-                        <div class="details">
-                            <label for="">Số điện thoại cá nhân</label>
-                            <input type="number">
-                        </div>
-                        <div class="details">
-                            <label for="">Email</label>
-                            <input type="email">
+                        <div class="f-grid-col">
+                            <div class="details">
+                                <label for="">Mô tả công việc</label>
+                                <textarea name="" id="" cols="90" rows="4"></textarea>
+                            </div>
+                            <div class="details">
+                                <label for="">Lý do nghỉ việc</label>
+                                <input type="text">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="f-grid">
-                    <div class="f-grid-col">
-                        <label class="title">Thường Trú</label>
-                        <div class="details">
-                            <label for="">Tỉnh/Thành phố thường trú</label>
-                            <select id="province">
-                                <option value="">Chọn</option>
-                            </select>
+
+                <div>
+                    <div class="profile-details">
+                        <label>Thông tin liên lạc</label>
+                    </div>
+                    <div class="f-grid">
+                        <div class="f-grid-col">
+                            <label class="title">Quê Quán</label>
+                            <div class="details">
+                                <label for="">Tỉnh/Thành phố quê quán</label>
+                                <select id="tinh">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>
+                            <div class="details">
+                                <label for="">Huyện/Quận quê quán</label>
+                                <select id="huyen">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>
+                            <div class="details">
+                                <label for="">Xã/Phường quê quán</label>
+                                <select id="xa">
+                                    <option value="" selected>Chọn</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="details">
-                            <label for="">Huyện/Quận thường trú</label>
-                            <select id="district">
-                                <option value="">Chọn</option>
-                            </select>
-                        </div>
-                        <div class="details">
-                            <label for="">Xã/Phường thường trú</label>
-                            <select id="ward">
-                                <option value="" selected>Chọn</option>
-                            </select>
-                        </div>
-                        <div class="details">
-                            <label for="">Địa chỉ thường trú</label>
-                            <input type="text">
+
+                        <div class="f-grid-col">
+                            <label class="title">Liên Lạc</label>
+                            <div class="details">
+                                <label for="">Số điện thoại gia đình</label>
+                                <input type="number">
+                            </div>
+                            <div class="details">
+                                <label for="">Số điện thoại cá nhân</label>
+                                <input type="number">
+                            </div>
+                            <div class="details">
+                                <label for="">Email</label>
+                                <input type="email">
+                            </div>
                         </div>
                     </div>
+                    <div class="f-grid">
+                        <div class="f-grid-col">
+                            <label class="title">Thường Trú</label>
+                            <div class="details">
+                                <label for="">Tỉnh/Thành phố thường trú</label>
+                                <select id="province">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>
+                            <div class="details">
+                                <label for="">Huyện/Quận thường trú</label>
+                                <select id="district">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>
+                            <div class="details">
+                                <label for="">Xã/Phường thường trú</label>
+                                <select id="ward">
+                                    <option value="" selected>Chọn</option>
+                                </select>
+                            </div>
+                            <div class="details">
+                                <label for="">Địa chỉ thường trú</label>
+                                <input type="text">
+                            </div>
+                        </div>
 
-                    <div class="f-grid-col">
-                        <label class="title">Tạm Trú</label>
-                        <div class="details">
-                            <label for="">Tỉnh/Thành phố tạm trú</label>
-                            <select id="1">
-                                <option value="">Chọn</option>
-                            </select>
-                        </div>
-                        <div class="details">
-                            <label for="">Huyện/Quận tạm trú</label>
-                            <select id="2">
-                                <option value="">Chọn</option>
-                            </select>
-                        </div>
-                        <div class="details">
-                            <label for="">Xã/Phường tạm trú</label>
-                            <select id="3">
-                                <option value="" selected>Chọn</option>
-                            </select>
-                        </div>
-                        <div class="details">
-                            <label for="">Địa chỉ tạm trú</label>
-                            <input type="text">
+                        <div class="f-grid-col">
+                            <label class="title">Tạm Trú</label>
+                            <div class="details">
+                                <label for="">Tỉnh/Thành phố tạm trú</label>
+                                <select id="1">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>
+                            <div class="details">
+                                <label for="">Huyện/Quận tạm trú</label>
+                                <select id="2">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>
+                            <div class="details">
+                                <label for="">Xã/Phường tạm trú</label>
+                                <select id="3">
+                                    <option value="" selected>Chọn</option>
+                                </select>
+                            </div>
+                            <div class="details">
+                                <label for="">Địa chỉ tạm trú</label>
+                                <input type="text">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <script src="assets/js/add.js"></script>
 </body>

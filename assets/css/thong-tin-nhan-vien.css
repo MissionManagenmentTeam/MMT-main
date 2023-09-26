@@ -70,6 +70,15 @@ button.cancel{
     border: 1px solid;
     align-items: start;
 }
+
+.f-grid textarea{
+    width: 100%;
+    height: 55px;
+    border-radius: 3px;
+    border: 1px solid;
+    align-items: start;
+}
+  
   
 .f-grid {
     display: flex;

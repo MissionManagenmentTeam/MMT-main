@@ -36,48 +36,406 @@
             <h3>Trình độ</h3>
         </div>
         <br>
-        <label for=""><i class="fa-solid fa-circle-info"></i>Thông tin trình độ nhân viên</label>
+        <label><i class="fa-solid fa-circle-info"></i>Thông tin trình độ nhân viên</label>
         <hr>
         <div class="details">
             <div class="sum">
-                <label for="" class="title">Tóm Lược Nhân Viên</label>
+                <label class="title">Tóm Lược Nhân Viên</label>
                 <div class="profile">
                     <div class="img">
                         <img src="assets/img/nhalinh.png" alt="">
                     </div>
                     <div class="grid">
                         <div class="grid-col">
-                            <strong>Họ và tên</strong>
-                            <label>Trần Thị Nhã Linh</label>
+                            <div class="str">
+                                <strong>Họ và tên</strong>
+                            </div>
+                            <div class="lab">
+                                <label>Trần Thị Nhã Linh</label>
+                            </div>
                         </div>
                         <div class="grid-col">
-                            <strong>Mã nhân viên</strong>
-                            <label>05072003</label>
+                            <div class="str">
+                                <strong>Mã nhân viên</strong>
+                            </div>
+                            <div class="lab">
+                                <label>05072003</label>
+                            </div>
                         </div>
                         <div class="grid-col">
-                            <strong>Phòng ban</strong>
-                            <label>Tài chính - Kế toán</label>
+                            <div class="str">
+                                <strong>Phòng ban</strong>
+                            </div>
+                            <div class="lab">
+                                <label>Tài chính - Kế toán</label>
+                            </div>
                         </div>
                         <div class="grid-col">
-                            <strong>Số điện thoại gia đình</strong>
-                            <label>0507020030205</label>
+                            <div class="str">
+                                <strong>Số điện thoại gia đình</strong>
+                            </div>
+                            <div class="lab">
+                                <label>0507020030205</label>
+                            </div>
                         </div>
                         <div class="grid-col">
-                            <strong>Số điện thoại cá nhân</strong>
-                            <label>0507020030205</label>
+                            <div class="str">
+                                <strong>Số điện thoại cá nhân</strong>
+                            </div>
+                            <div class="lab">
+                                <label>0507020030205</label>
+                            </div>
                         </div>
                         <div class="grid-col">
-                            <strong>Email</strong>
-                            <label>nhalinhtran0507@gmail.com</label>
+                            <div class="str">
+                                <strong>Email</strong>
+                            </div>
+                            <div class="lab">
+                                <label>nhalinhtran0507@gmail.com</label>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="tabs">
+                <div class="container">
+                    <div class="tab-wrapper">
+                        <ul class="tab">
+                            <li>
+                                <a href="#tab-dao-tao">Quy trình đào tạo</a>
+                            </li>
+                            <li>
+                                <a href="#tab-ngoai-ngu">Ngoại ngữ</a>
+                            </li>
+                            <li>
+                                <a href="#tab-vi-tinh">Vi tính</a>
+                            </li>
+                            <li>
+                                <a href="#tab-chinh-tri">Chính trị</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-item" id="tab-dao-tao">
+                                <div class="btn">
+                                    <button class="add"><i class="fa-solid fa-plus"></i>Thêm mới</button>
+                                    <button class="update"><i class="fa-solid fa-arrows-spin"></i>Cập nhật</button>
+                                    <button class="cancel"><i class="fa-solid fa-xmark"></i>Hủy</button>
+                                </div>
+                                <div class="table">
+                                    <div class="table__header">
+                                        <div class="input-group">
+                                            <input type="search" placeholder="Tìm kiếm...">
+                                            <img src="assets/img/search.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="table__body">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Từ năm</th>
+                                                    <th>Đến năm</th>
+                                                    <th>Chế độ học</th>
+                                                    <th>Trường</th>
+                                                    <th>Ngành</th>
+                                                    <th>Bằng</th>
+                                                    <th>Dạng bằng</th>
+                                                    <th>Nội dung</th>
+                                                    <th>Loại đào tạo</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>02/05/2003</td>
+                                                    <td>05/07/2003</td>
+                                                    <td>Chính quy</td>
+                                                    <td>One Hundred MAM University</td>
+                                                    <td>Kế toán</td>
+                                                    <td>Cử nhân</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Chính ngành</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>02/05/2003</td>
+                                                    <td>05/07/2003</td>
+                                                    <td>Chính quy</td>
+                                                    <td>Vu Quy University</td>
+                                                    <td>Kế toán</td>
+                                                    <td>Cử nhân</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Chính ngành</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>02/05/2003</td>
+                                                    <td>05/07/2003</td>
+                                                    <td>Chính quy</td>
+                                                    <td>Đại học Trăm mâm</td>
+                                                    <td>Kế toán</td>
+                                                    <td>Cử nhân</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Chính ngành</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>02/05/2003</td>
+                                                    <td>05/07/2003</td>
+                                                    <td>Chính quy</td>
+                                                    <td>Đại học Vu quy</td>
+                                                    <td>Kế toán</td>
+                                                    <td>Cử nhân</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Chính ngành</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="tab-item" id="tab-ngoai-ngu">
+                                <div class="btn">
+                                    <button class="add"><i class="fa-solid fa-plus"></i>Thêm mới</button>
+                                    <button class="update"><i class="fa-solid fa-arrows-spin"></i>Cập nhật</button>
+                                    <button class="cancel"><i class="fa-solid fa-xmark"></i>Hủy</button>
+                                </div>
+                                <div class="table">
+                                    <div class="table__header">
+                                        <div class="input-group">
+                                            <input type="search" placeholder="Tìm kiếm...">
+                                            <img src="assets/img/search.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="table__body">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Từ năm</th>
+                                                    <th>Đến năm</th>
+                                                    <th>Chế độ học</th>
+                                                    <th>Trường</th>
+                                                    <th>Ngành</th>
+                                                    <th>Bằng</th>
+                                                    <th>Dạng bằng</th>
+                                                    <th>Nội dung</th>
+                                                    <th>Loại đào tạo</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>02/05/2003</td>
+                                                    <td>05/07/2003</td>
+                                                    <td>Chính quy</td>
+                                                    <td>One Hundred MAM University</td>
+                                                    <td>Kế toán</td>
+                                                    <td>Cử nhân</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Chính ngành</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>02/05/2003</td>
+                                                    <td>05/07/2003</td>
+                                                    <td>Chính quy</td>
+                                                    <td>Vu Quy University</td>
+                                                    <td>Kế toán</td>
+                                                    <td>Cử nhân</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Chính ngành</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>02/05/2003</td>
+                                                    <td>05/07/2003</td>
+                                                    <td>Chính quy</td>
+                                                    <td>Đại học Trăm mâm</td>
+                                                    <td>Kế toán</td>
+                                                    <td>Cử nhân</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Chính ngành</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>02/05/2003</td>
+                                                    <td>05/07/2003</td>
+                                                    <td>Chính quy</td>
+                                                    <td>Đại học Vu quy</td>
+                                                    <td>Kế toán</td>
+                                                    <td>Cử nhân</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Chính ngành</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-item" id="tab-vi-tinh">
+                                <div class="btn">
+                                    <button class="add"><i class="fa-solid fa-plus"></i>Thêm mới</button>
+                                    <button class="update"><i class="fa-solid fa-arrows-spin"></i>Cập nhật</button>
+                                    <button class="cancel"><i class="fa-solid fa-xmark"></i>Hủy</button>
+                                </div>
+                                <div class="table">
+                                    <div class="table__header">
+                                        <div class="input-group">
+                                            <input type="search" placeholder="Tìm kiếm...">
+                                            <img src="assets/img/search.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="table__body">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Từ năm</th>
+                                                    <th>Đến năm</th>
+                                                    <th>Chế độ học</th>
+                                                    <th>Trường</th>
+                                                    <th>Ngành</th>
+                                                    <th>Bằng</th>
+                                                    <th>Dạng bằng</th>
+                                                    <th>Nội dung</th>
+                                                    <th>Loại đào tạo</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>02/05/2003</td>
+                                                    <td>05/07/2003</td>
+                                                    <td>Chính quy</td>
+                                                    <td>One Hundred MAM University</td>
+                                                    <td>Kế toán</td>
+                                                    <td>Cử nhân</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Chính ngành</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>02/05/2003</td>
+                                                    <td>05/07/2003</td>
+                                                    <td>Chính quy</td>
+                                                    <td>Vu Quy University</td>
+                                                    <td>Kế toán</td>
+                                                    <td>Cử nhân</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Chính ngành</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>02/05/2003</td>
+                                                    <td>05/07/2003</td>
+                                                    <td>Chính quy</td>
+                                                    <td>Đại học Trăm mâm</td>
+                                                    <td>Kế toán</td>
+                                                    <td>Cử nhân</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Chính ngành</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>02/05/2003</td>
+                                                    <td>05/07/2003</td>
+                                                    <td>Chính quy</td>
+                                                    <td>Đại học Vu quy</td>
+                                                    <td>Kế toán</td>
+                                                    <td>Cử nhân</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Chính ngành</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-item" id="tab-chinh-tri">
+                                <div class="btn">
+                                    <button class="add"><i class="fa-solid fa-plus"></i>Thêm mới</button>
+                                    <button class="update"><i class="fa-solid fa-arrows-spin"></i>Cập nhật</button>
+                                    <button class="cancel"><i class="fa-solid fa-xmark"></i>Hủy</button>
+                                </div>
+                                <div class="table">
+                                    <div class="table__header">
+                                        <div class="input-group">
+                                            <input type="search" placeholder="Tìm kiếm...">
+                                            <img src="assets/img/search.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="table__body">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Từ năm</th>
+                                                    <th>Đến năm</th>
+                                                    <th>Chế độ học</th>
+                                                    <th>Trường</th>
+                                                    <th>Ngành</th>
+                                                    <th>Bằng</th>
+                                                    <th>Dạng bằng</th>
+                                                    <th>Nội dung</th>
+                                                    <th>Loại đào tạo</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>02/05/2003</td>
+                                                    <td>05/07/2003</td>
+                                                    <td>Chính quy</td>
+                                                    <td>One Hundred MAM University</td>
+                                                    <td>Kế toán</td>
+                                                    <td>Cử nhân</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Chính ngành</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>02/05/2003</td>
+                                                    <td>05/07/2003</td>
+                                                    <td>Chính quy</td>
+                                                    <td>Vu Quy University</td>
+                                                    <td>Kế toán</td>
+                                                    <td>Cử nhân</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Chính ngành</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>02/05/2003</td>
+                                                    <td>05/07/2003</td>
+                                                    <td>Chính quy</td>
+                                                    <td>Đại học Trăm mâm</td>
+                                                    <td>Kế toán</td>
+                                                    <td>Cử nhân</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Chính ngành</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>02/05/2003</td>
+                                                    <td>05/07/2003</td>
+                                                    <td>Chính quy</td>
+                                                    <td>Đại học Vu quy</td>
+                                                    <td>Kế toán</td>
+                                                    <td>Cử nhân</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Chính ngành</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
     </section>
+    <script src="assets/js/trinh-do.js"></script>
 </body>
 
 </html>

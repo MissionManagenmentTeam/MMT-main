@@ -1,0 +1,188 @@
+button.add{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 10px;
+    color: green;
+    /* background: green; */
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid green;
+    outline: none;
+    transition: 0.2s;
+    width: 100px;
+}
+
+button.update{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 10px;
+    color: blue;
+    /* background: blue; */
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid blue;
+    outline: none;
+    transition: 0.2s;
+    width: 100px;
+}
+
+button.cancel{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 10px;
+    color: red;
+    /* background: red; */
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid red;
+    outline: none;
+    transition: 0.2s;
+    width: 100px;
+}
+
+
+.sum{
+    width: 100%;
+    padding: 15px;
+}
+
+.title{
+    text-align: center;
+    color: #245CA6;
+    font-weight: bold;
+}
+
+.profile{
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+    border: 2px solid #8fcde1;
+    border-radius: 15px;
+}
+
+.img{
+    width: 15%;
+    padding: 5px;
+}
+
+.img img{
+    width: 138px;
+    height: 172px;
+    border-radius: 10px;
+}
+.grid{
+    width: 100%;
+    padding: 5px;
+    line-height: 30px;
+}
+
+.grid-col{
+    display: flex;
+    text-align: left;
+    width: 50%;
+}
+
+.grid-col .str{
+    text-align: left;
+    width: 40%;
+    padding-right: 15px;
+}
+
+.group{
+    width: 100%;
+    height: 10%;
+    background-color: #fff4;
+    padding: .8rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.group .profile{
+    padding-top: 10px;
+}
+
+.group .profile .profile-details{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+    background-color: #8fcde1;
+}
+
+.group .profile .profile-details label{
+    padding-right: 15px;
+    color: #245CA6;
+    font-weight: bold;
+}
+
+.group .profile .profile-details select{
+    padding-left: 10px;
+    height: 25px;
+    width: 200px;
+}
+
+.f-grid .f-grid-col{
+    display: flex;
+    flex-direction: column;
+}
+  
+.f-grid input,
+.f-grid select{
+    width: 100%;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid;
+    align-items: start;
+}
+   
+.f-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -1rem;
+    flex-flow: row wrap;
+    padding-top: 10px;
+}
+  
+.f-grid-col {
+    flex: 1 0;
+    background-color: #fbfbfb;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 2px solid #8fcde1;
+    border-radius: 15px;
+}
+
+.details{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+}
+
+
+.details label{
+    text-align: left;
+    width: 50%;
+    padding-right: 15px;
+}
+
+.details input[type=checkbox]{
+    position: relative;
+    cursor: pointer;
+    justify-content: start;
+}
+
+.title{
+    text-align: center;
+    color: #245CA6;
+    font-weight: bold;
+}
+
+.btn{
+    padding: 10px;
+    text-align: right;
+}
+
+i{
+    padding-right: 10px;
+}

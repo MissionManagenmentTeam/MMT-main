@@ -52,13 +52,6 @@
     }
 
     /* Modal Content */
-    .modal-content {
-        background-color: #fefefe;
-        margin: auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 60%;
-    }
 
     /* The Close Button */
     .close {
@@ -74,32 +67,189 @@
         text-decoration: none;
         cursor: pointer;
     }
+
+    .modal-content {
+        padding-top: 10px;
+    }
+
+    .modal-content .profile-details {
+        width: 100%;
+        height: 50px;
+        padding: 15px;
+        background-color: #8fcde1;
+    }
+
+    .modal-content .profile-details label {
+        text-align: left;
+        padding-right: 15px;
+        color: #245CA6;
+        font-weight: bold;
+    }
+
+    .f-grid .f-grid-col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .f-grid input,
+    .f-grid select {
+        width: 100%;
+        height: 25px;
+        border-radius: 3px;
+        border: 1px solid;
+        align-items: start;
+    }
+
+    .f-grid textarea {
+        width: 100%;
+        height: 55px;
+        border-radius: 3px;
+        border: 1px solid;
+        align-items: start;
+    }
+
+
+    .f-grid {
+        display: flex;
+        justify-content: space-between;
+        margin-left: -1rem;
+        flex-flow: row wrap;
+        padding-top: 10px;
+    }
+
+    .f-grid-col {
+        flex: 1 0;
+        background-color: #fbfbfb;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border: 2px solid #8fcde1;
+        border-radius: 15px;
+    }
+
+    .f-grid-col img {
+        width: 160px;
+        height: 200px;
+    }
+
+    .details {
+        width: 100%;
+        padding: 5px;
+        display: flex;
+    }
+
+    .details label {
+        text-align: left;
+        width: 50%;
+        padding-right: 15px;
+    }
+
+    .title {
+        text-align: left;
+        color: #245CA6;
+        font-weight: bold;
+    }
+
+    .gender {
+        display: flex;
+    }
+
+    .gender label {
+        text-align: left;
+        padding-right: 25px;
+        align-items: center;
+    }
 </style>
 
 <body>
     <div class="container">
-        <h2>Freetuts.net hướng dẫn tạo Modal Box</h2>
         <!-- Button đăng nhập để mở form đăng nhập -->
-        <button id="myBtn">Đăng Nhập</button>
+        <button id="myBtn">Thêm</button>
         <!-- The Modal -->
         <div id="myModal" class="modal">
             <!-- Nội dung form đăng nhập -->
             <div class="modal-content">
-                <form action="#">
-                    <span class="close">&times;</span>
-                    <h2>Form đăng nhập</h2>
-                    <div class="fomrgroup">
-                        <b>UserName:</b>
-                        <input type="text" name="username">
+                <div class="profile-details">
+                    <label>Nhập thông tin trình độ</label>
+                </div>
+                <hr>
+                <div class="profile-infomation">
+                    <div class="f-grid">
+                        <div class="f-grid-col">
+                            <div class="details">
+                                <label for="">Họ khai sinh</label>
+                                <input type="text">
+                            </div>
+                            <div class="details">
+                                <label for="">Họ thường dùng</label>
+                                <input type="text" id="inp">
+                            </div>
+                            <div class="details">
+                                <label for="">Mã nhân viên</label>
+                                <input type="text">
+                            </div>
+                            <div class="details">
+                                <label for="">Ngày sinh</label>
+                                <input type="date">
+                            </div>
+                            <div class="details">
+                                <label for="">Số hộ chiếu</label>
+                                <input type="text">
+                            </div>
+                            <div class="details">
+                                <label for="">Nơi cấp</label>
+                                <input type="text">
+                            </div>
+                        </div>
+
+                        <div class="f-grid-col">
+                            <div class="details">
+                                <label for="">Tên khai sinh</label>
+                                <input type="text">
+                            </div>
+                            <div class="details">
+                                <label for="">Tên thường dùng</label>
+                                <input type="text">
+                            </div>
+                            <div class="details">
+                                <label for="">Bí danh</label>
+                                <input type="text">
+                            </div>
+                            <div class="details">
+                                <label for="">CCCD/CMND</label>
+                                <input type="number">
+                            </div>
+                            <div class="details">
+                                <label for="">Ngày cấp</label>
+                                <input type="date">
+                            </div>
+                            <div class="details">
+                                <label for="">Nơi cấp</label>
+                                <input type="text">
+                            </div>
+                        </div>
+
+                        <div class="f-grid-col">
+                            <div class="details">
+                                <img src="assets/img/nhalinh.png" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="gender">
+                                    <label for="">Nam</label>
+                                    <input type="radio">
+                                </div>
+                                <div class=" gender">
+                                    <label for="">Nữ</label>
+                                    <input type="radio" checked>
+                                </div>
+                                <div class="gender">
+                                    <label for="">Khác</label>
+                                    <input type="radio">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="fomrgroup">
-                        <b>PassWord:</b>
-                        <input type="passWord" name="passWord">
-                    </div>
-                    <div class="fomrgroup">
-                        <button>Đăng nhập</button>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>

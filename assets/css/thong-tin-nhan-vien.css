@@ -25,12 +25,40 @@ button.cancel{
 }
 
 .member{
+    padding: 15px;
     width: 100%;
-    height: 10%;
+    display: flex;
     background-color: #fff4;
     padding: .8rem 1rem;
     justify-content: space-between;
-    align-items: center;
+}
+
+.menu{
+    width: 10%;
+    border-right: 1px solid #000;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+ul li{
+    height: 50px;
+}
+
+ul li:hover{
+    background: #245CA6;
+}
+
+ul li a:hover{
+    color: #ffffff;
+}
+
+.info{
+    width: 89%;
+    padding-left: 2px;
 }
 
 .member .profile{

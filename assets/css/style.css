@@ -62,7 +62,10 @@ p.lb4 {
 
 a{
   text-decoration: none;
-  color: #078178;
+  color: #245CA7;
+  font-size: 600;
+  display: inline-flex;
+  padding: 10px;
 }
 
 .section-p1 {

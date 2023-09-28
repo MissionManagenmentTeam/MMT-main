@@ -40,6 +40,39 @@ button.cancel{
     width: 100px;
 }
 
+.level{
+    padding: 15px;
+    width: 100%;
+    display: flex;
+}
+
+.menu{
+    width: 10%;
+    border-right: 1px solid #000;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+ul li{
+    height: 50px;
+}
+
+ul li:hover{
+    background: #245CA6;
+}
+
+ul li a:hover{
+    color: #ffffff;
+}
+
+.info{
+    width: 89%;
+    padding-left: 2px;
+}
 
 .sum{
     width: 100%;

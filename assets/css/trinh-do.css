@@ -12,6 +12,21 @@ button.add{
     width: 100px;
 }
 
+button.load{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    color: green;
+    /* background: green; */
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid green;
+    outline: none;
+    transition: 0.2s;
+    width: 40px;
+}
+
 button.update{
     font-size: 14px;
     font-weight: 600;

@@ -46,9 +46,9 @@
                     <li><a href="ch-tiet-ho-so-tuyen-dung.html">Chi tiết hồ sơ tuyển dụng</a></li>
                     <li><a href="chi-tiet-ho-so-lien-quan.html">Chi tiết hồ sơ liên quan</a></li>
                     <li><a href="thong-tin-gia-dinh.html">Thông tin gia đình</a></li>
-                    <li><a href="">Thông tin lúc nhỏ</a></li>
-                    <li><a href="">Thông tin hợp đồng lao động</a></li>
-                    <li><a href="">Quá trình công tác</a></li>
+                    <li><a href="thong-tin-luc-nho.html">Thông tin lúc nhỏ</a></li>
+                    <li><a href="thong-tin-hop-dong-lao-dong.html">Thông tin hợp đồng lao động</a></li>
+                    <li><a href="qua-trinh-cong-tac.html">Quá trình công tác</a></li>
                 </ul>
             </div>
         </div>
@@ -135,7 +135,10 @@
                             <div class="tab-content">
                                 <div class="tab-item" id="tab-dao-tao">
                                     <div class="btn">
-                                        <button class="add"><i class="fa-solid fa-plus"></i>Thêm mới</button>
+                                        <button class="add modal-trigger" data-modal="modal-name">
+                                            <i class="fa-solid fa-plus"></i>Thêm
+                                            mới
+                                        </button>
                                         <button class="update"><i class="fa-solid fa-arrows-spin"></i>Cập nhật</button>
                                         <button class="cancel"><i class="fa-solid fa-xmark"></i>Hủy</button>
                                     </div>
@@ -214,7 +217,8 @@
 
                                 <div class="tab-item" id="tab-ngoai-ngu">
                                     <div class="btn">
-                                        <button class="add"><i class="fa-solid fa-plus"></i>Thêm mới</button>
+                                        <button class="add modal-trigger" data-modal="modal-name-2"><i
+                                                class="fa-solid fa-plus"></i>Thêm mới</button>
                                         <button class="update"><i class="fa-solid fa-arrows-spin"></i>Cập nhật</button>
                                         <button class="cancel"><i class="fa-solid fa-xmark"></i>Hủy</button>
                                     </div>
@@ -293,7 +297,8 @@
 
                                 <div class="tab-item" id="tab-vi-tinh">
                                     <div class="btn">
-                                        <button class="add"><i class="fa-solid fa-plus"></i>Thêm mới</button>
+                                        <button class="add modal-trigger" data-modal="modal-name-3"><i
+                                                class="fa-solid fa-plus"></i>Thêm mới</button>
                                         <button class="update"><i class="fa-solid fa-arrows-spin"></i>Cập nhật</button>
                                         <button class="cancel"><i class="fa-solid fa-xmark"></i>Hủy</button>
                                     </div>
@@ -372,7 +377,8 @@
 
                                 <div class="tab-item" id="tab-chinh-tri">
                                     <div class="btn">
-                                        <button class="add"><i class="fa-solid fa-plus"></i>Thêm mới</button>
+                                        <button class="add modal-trigger" data-modal="modal-name-4"><i
+                                                class="fa-solid fa-plus"></i>Thêm mới</button>
                                         <button class="update"><i class="fa-solid fa-arrows-spin"></i>Cập nhật</button>
                                         <button class="cancel"><i class="fa-solid fa-xmark"></i>Hủy</button>
                                     </div>
@@ -455,6 +461,257 @@
             </div>
         </div>
     </section>
+
+    <!-- Modal đào tạo-->
+    <div class="modal" id="modal-name">
+        <div class="modal-sandbox"></div>
+        <div class="modal-box">
+            <div class="modal-header">
+                <div class="cancel" style="text-align: right;">&#10006;</div>
+                <h1 style="color: #fff;">Nhập thông tin đào tạo</h1>
+            </div>
+            <div class="modal-body">
+                <div class="f-grid">
+                    <div class="f-grid-col">
+                        <div class="details">
+                            <label for="">Từ năm</label>
+                            <input type="date">
+                        </div>
+                        <div class="details">
+                            <label for="">Chế độ học</label>
+                            <select name="" id=""></select>
+                        </div>
+                        <div class="details">
+                            <label for="">Trường đào tạo</label>
+                            <select name="" id=""></select>
+                        </div>
+                        <div class="details">
+                            <label for="">Bằng cấp</label>
+                            <select name="" id=""></select>
+                        </div>
+                        <div class="details">
+                            <label for="">Kết quả</label>
+                            <select name="" id=""></select>
+                        </div>
+                        <div class="details">
+                            <label for="">Chuyên môn</label>
+                            <input type="text">
+                        </div>
+                        <div class="details">
+                            <label for="">Ngày cấp</label>
+                            <input type="date">
+                        </div>
+                    </div>
+
+                    <div class="f-grid-col">
+                        <div class="details">
+                            <label for="">Đến năm</label>
+                            <input type="text">
+                        </div>
+                        <div class="details">
+                            <label for="">Loại đào tạo</label>
+                            <select name="" id=""></select>
+                        </div>
+                        <div class="details">
+                            <label for="">Ngành đào tạo</label>
+                            <select name="" id=""></select>
+                        </div>
+                        <div class="details">
+                            <label for="">Thời gian</label>
+                            <input type="text">
+                        </div>
+                        <div class="details">
+                            <label for="">Số bằng</label>
+                            <input type="text">
+                        </div>
+                        <div class="details">
+                            <label for="">Quốc gia</label>
+                            <select name="" id=""></select>
+                        </div>
+                        <div class="details">
+                            <label for="">Mô tả công việc</label>
+                            <textarea name="" id="" cols="90" rows="4"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <button class="cancel">Thoát</button>
+                <button class="add">Thêm</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal ngoại ngữ-->
+    <div class="modal" id="modal-name-2">
+        <div class="modal-sandbox"></div>
+        <div class="modal-box">
+            <div class="modal-header">
+                <div class="cancel" style="text-align: right;">&#10006;</div>
+                <h1 style="color: #fff;">Nhập thông tin ngoại ngữ</h1>
+            </div>
+            <div class="modal-body">
+                <div class="f-grid">
+                    <div class="f-grid-col">
+                        <div class="details">
+                            <label for="">Ngoại ngữ</label>
+                            <select name="" id=""></select>
+                        </div>
+                        <div class="details">
+                            <label for="">Kết quả</label>
+                            <select name="" id=""></select>
+                        </div>
+                        <div class="details">
+                            <label for="">Kinh phí</label>
+                            <select name="" id=""></select>
+                        </div>
+                    </div>
+
+                    <div class="f-grid-col">
+                        <div class="details">
+                            <label for="">Bằng cấp</label>
+                            <select name="" id=""></select>
+                        </div>
+                        <div class="details">
+                            <label for="">Ngày cấp</label>
+                            <input type="date">
+                        </div>
+                        <div class="details">
+                            <label for="">Chính/Phụ</label>
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                </div>
+                <div class="f-grid">
+                    <div class="f-grid-col">
+                        <div class="details">
+                            <label for="">Nguồn kinh phí</label>
+                            <input type="text">
+                        </div>
+                        <div class="details">
+                            <label for="">Ghi chú</label>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="cancel">Thoát</button>
+                <button class="add">Thêm</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal vi tính-->
+    <div class="modal" id="modal-name-3">
+        <div class="modal-sandbox"></div>
+        <div class="modal-box">
+            <div class="modal-header">
+                <div class="cancel" style="text-align: right;">&#10006;</div>
+                <h1 style="color: #fff;">Nhập thông tin vi tính</h1>
+            </div>
+            <div class="modal-body">
+                <div class="f-grid">
+                    <div class="f-grid-col">
+                        <div class="details">
+                            <label for="">Bằng cấp</label>
+                            <select name="" id=""></select>
+                        </div>
+                        <div class="details">
+                            <label for="">Chê độ học</label>
+                            <select name="" id=""></select>
+                        </div>
+                        <div class="details">
+                            <label for="">Từ ngày</label>
+                            <input type="date">
+                        </div>
+                        <div class="details">
+                            <label for="">Kinh phí</label>
+                            <input type="number">
+                        </div>
+                    </div>
+
+                    <div class="f-grid-col">
+                        <div class="details">
+                            <label for="">Số lượng</label>
+                            <input type="number">
+                        </div>
+                        <div class="details">
+                            <label for="">Ngày cấp</label>
+                            <input type="date">
+                        </div>
+                        <div class="details">
+                            <label for="">Đến ngày</label>
+                            <input type="date">
+                        </div>
+                        <div class="details">
+                            <label for="">Nguồn kinh phí</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="f-grid">
+                    <div class="f-grid-col">
+                        <div class="details">
+                            <label for="">Nội dung</label>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="cancel">Thoát</button>
+                <button class="add">Thêm</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal chính trị-->
+    <div class="modal" id="modal-name-4">
+        <div class="modal-sandbox"></div>
+        <div class="modal-box">
+            <div class="modal-header">
+                <div class="cancel" style="text-align: right;">&#10006;</div>
+                <h1 style="color: #fff;">Nhập thông tin chính trị</h1>
+            </div>
+            <div class="modal-body">
+                <div class="f-grid">
+                    <div class="f-grid-col">
+                        <div class="details">
+                            <label for="">Trình độ chính trị</label>
+                            <select name="" id=""></select>
+                        </div>
+                        <div class="details">
+                            <label for="">Từ ngày</label>
+                            <input type="date">
+                        </div>
+                        <div class="details">
+                            <label for="">Kinh phí</label>
+                            <input type="number">
+                        </div>
+                        <div class="details">
+                            <label for="">Ngày cấp</label>
+                            <input type="date">
+                        </div>
+                    </div>
+
+                    <div class="f-grid-col">
+                        <div class="details">
+                            <label for="">Số lượng</label>
+                            <input type="number">
+                        </div>
+                        <div class="details">
+                            <label for="">Đến ngày</label>
+                            <input type="date">
+                        </div>
+                        <div class="details">
+                            <label for="">Nguồn kinh phí</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="cancel">Thoát</button>
+                <button class="add">Thêm</button>
+            </div>
+        </div>
+    </div>
     <script src="assets/js/trinh-do.js"></script>
 </body>
 

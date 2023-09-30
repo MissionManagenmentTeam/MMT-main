@@ -46,9 +46,9 @@
                     <li><a href="ch-tiet-ho-so-tuyen-dung.html">Chi tiết hồ sơ tuyển dụng</a></li>
                     <li><a href="chi-tiet-ho-so-lien-quan.html">Chi tiết hồ sơ liên quan</a></li>
                     <li><a href="thong-tin-gia-dinh.html">Thông tin gia đình</a></li>
-                    <li><a href="">Thông tin lúc nhỏ</a></li>
-                    <li><a href="">Thông tin hợp đồng lao động</a></li>
-                    <li><a href="">Quá trình công tác</a></li>
+                    <li><a href="thong-tin-luc-nho.html">Thông tin lúc nhỏ</a></li>
+                    <li><a href="thong-tin-hop-dong-lao-dong.html">Thông tin hợp đồng lao động</a></li>
+                    <li><a href="qua-trinh-cong-tac.html">Quá trình công tác</a></li>
                 </ul>
             </div>
         </div>
@@ -137,7 +137,8 @@
                                     <td>Tiểu vương quốc Phan Thiết</td>
                                     <td>Hỏi cưới</td>
                                     <td>
-                                        <button class="update"><i class="fa-solid fa-pen-nib"></i></button>
+                                        <button class="update modal-trigger" data-modal="modal-name"><i
+                                                class="fa-solid fa-pen-nib"></i></button>
                                         <button class="cancel"><i class="fa-solid fa-trash-can"></i></button>
                                     </td>
                                 </tr>
@@ -181,7 +182,45 @@
             </div>
         </div>
     </section>
-    <script src="assets/js/trinh-do.js"></script>
+
+    <!-- Modal nước ngoài
+    <div class="modal" id="modal-name">
+        <div class="modal-sandbox"></div>
+        <div class="modal-box">
+            <div class="modal-header">
+                <div class="update" style="text-align: right;">&#10006;</div>
+                <h1 style="color: #fff;">Đi nước ngoài</h1>
+            </div>
+            <div class="modal-body">
+                <div class="f-grid">
+                    <div class="f-grid-col">
+                        <div class="details">
+                            <label for="">Ngày đi</label>
+                            <input type="date">
+                        </div>
+                        <div class="details">
+                            <label for="">Ngày về</label>
+                            <input type="date">
+                        </div>
+                        <div class="details">
+                            <label for="">Thời gian</label>
+                            <input type="text">
+                        </div>
+                        <div class="details">
+                            <label for="">Quốc gia đến</label>
+                            <input type="text">
+                        </div>
+                        <div class="details">
+                            <label for="">Mục đích</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <button class="update">Lưu thay đổi</button>
+            </div>
+        </div>
+    </div> -->
+    <script src="assets/js/nuoc-ngoai.js"></script>
 </body>
 
 </html>

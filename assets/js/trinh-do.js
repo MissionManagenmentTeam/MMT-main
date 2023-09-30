@@ -48,3 +48,16 @@ function searchTable() {
         visible_row.style.backgroundColor = (i % 2 == 0) ? 'transparent' : '#0000000b';
     });
 }
+
+
+// Modal box
+
+$(".modal-trigger").click(function (e) {
+    e.preventDefault();
+    dataModal = $(this).attr("data-modal");
+    $("#" + dataModal).css({ "display": "block" });
+});
+
+$(".cancel, .modal-sandbox").click(function () {
+    $(".modal").css({ "display": "none" });
+});

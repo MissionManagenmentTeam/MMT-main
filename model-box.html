@@ -4,86 +4,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Box</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 <style>
-    .container {
-        width: 70%;
-        margin: auto;
-        text-align: center;
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Barlow", sans-serif;
     }
 
-    /* Định dạng phần form đăng nhập*/
-    .fomrgroup {
-        width: 50%;
-        margin: auto;
-        display: block;
-        height: 50px;
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Barlow", sans-serif;
     }
 
-    .fomrgroup input {
-        float: right;
-        width: 70%;
-        height: 25px;
-        margin-right: 20px;
-        line-height: 50px;
+    .modal,
+    .modal-box {
+        z-index: 900;
     }
 
-    .fomrgroup b {
-        font-size: 20px;
-    }
-
-    /* The Modal (background) */
-    .modal {
-        display: none;
-        /* mặc định được ẩn đi */
+    .modal-sandbox {
         position: fixed;
-        /* vị trí cố định */
-        z-index: 1;
-        /* Ưu tiên hiển thị trên cùng */
-        padding-top: 100px;
-        left: 0;
-        top: 0;
         width: 100%;
         height: 100%;
+        top: 0;
+        left: 0;
+        background: transparent;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+
         overflow: auto;
-        background-color: rgb(0, 0, 0);
-        background-color: rgba(0, 0, 0, 0.4);
     }
 
-    /* Modal Content */
-
-    /* The Close Button */
-    .close {
-        color: #aaaaaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
+    .modal-box {
+        position: relative;
+        width: 80%;
+        max-width: 920px;
+        margin: 100px auto;
+        animation-name: modalbox;
+        animation-duration: .4s;
+        animation-timing-function: cubic-bezier(0, 0, .3, 1.6);
     }
 
-    .close:hover,
-    .close:focus {
-        color: #000;
-        text-decoration: none;
+    .modal-header {
+        padding: 20px 40px;
+        background: #546E7A;
+        color: #ffffff;
+    }
+
+    .modal-body {
+        background: #ECEFF1;
+        padding: 60px 40px;
+    }
+
+    /* Close Button */
+    .close-modal {
+        text-align: right;
         cursor: pointer;
     }
 
-    .modal-content {
-        padding-top: 10px;
+    /* Animation */
+    @-webkit-keyframes modalbox {
+        0% {
+            top: -250px;
+            opacity: 0;
+        }
+
+        100% {
+            top: 0;
+            opacity: 1;
+        }
     }
 
-    .modal-content .profile-details {
-        width: 100%;
-        height: 50px;
-        padding: 15px;
-        background-color: #8fcde1;
+    @keyframes modalbox {
+        0% {
+            top: -250px;
+            opacity: 0;
+        }
+
+        100% {
+            top: 0;
+            opacity: 1;
+        }
     }
 
-    .modal-content .profile-details label {
+    /* Aditional Styles */
+    * {
+        /* font-family: "Roboto", sans-serif; */
+        font-weight: normal;
+    }
+
+    p {
+        line-height: 1.4em;
+    }
+
+    body {
+        background: #B0BEC5;
+    }
+
+    h1 {
         text-align: left;
-        padding-right: 15px;
-        color: #245CA6;
-        font-weight: bold;
+    }
+
+    .modal-trigger,
+    button {
+        top: 50%;
+        left: 50%;
+        padding: 20px 40px;
+        background: transparent;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        text-decoration: none;
+    }
+
+    .modal-trigger {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        transition: ease .2s;
+    }
+
+    button {
+        border: 1px solid #333333;
+        outline: none;
+        color: #333333;
+        text-align: right;
     }
 
     .f-grid .f-grid-col {
@@ -119,17 +183,12 @@
 
     .f-grid-col {
         flex: 1 0;
-        background-color: #fbfbfb;
+        background-color: #ECEFF1;
         margin-left: 1rem;
         margin-bottom: 1rem;
         padding: 1rem;
-        border: 2px solid #8fcde1;
+        border: 2px double #546E7A;
         border-radius: 15px;
-    }
-
-    .f-grid-col img {
-        width: 160px;
-        height: 200px;
     }
 
     .details {
@@ -143,142 +202,101 @@
         width: 50%;
         padding-right: 15px;
     }
-
-    .title {
-        text-align: left;
-        color: #245CA6;
-        font-weight: bold;
-    }
-
-    .gender {
-        display: flex;
-    }
-
-    .gender label {
-        text-align: left;
-        padding-right: 25px;
-        align-items: center;
-    }
 </style>
 
 <body>
-    <div class="container">
-        <!-- Button đăng nhập để mở form đăng nhập -->
-        <button id="myBtn">Thêm</button>
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-            <!-- Nội dung form đăng nhập -->
-            <div class="modal-content">
-                <div class="profile-details">
-                    <label>Nhập thông tin trình độ</label>
-                </div>
-                <hr>
-                <div class="profile-infomation">
-                    <div class="f-grid">
-                        <div class="f-grid-col">
-                            <div class="details">
-                                <label for="">Họ khai sinh</label>
-                                <input type="text">
-                            </div>
-                            <div class="details">
-                                <label for="">Họ thường dùng</label>
-                                <input type="text" id="inp">
-                            </div>
-                            <div class="details">
-                                <label for="">Mã nhân viên</label>
-                                <input type="text">
-                            </div>
-                            <div class="details">
-                                <label for="">Ngày sinh</label>
-                                <input type="date">
-                            </div>
-                            <div class="details">
-                                <label for="">Số hộ chiếu</label>
-                                <input type="text">
-                            </div>
-                            <div class="details">
-                                <label for="">Nơi cấp</label>
-                                <input type="text">
-                            </div>
-                        </div>
+    <a href="#" class="modal-trigger" data-modal="modal-name">Thêm trình độ</a> <!-- Trigger Modal. -->
 
-                        <div class="f-grid-col">
-                            <div class="details">
-                                <label for="">Tên khai sinh</label>
-                                <input type="text">
-                            </div>
-                            <div class="details">
-                                <label for="">Tên thường dùng</label>
-                                <input type="text">
-                            </div>
-                            <div class="details">
-                                <label for="">Bí danh</label>
-                                <input type="text">
-                            </div>
-                            <div class="details">
-                                <label for="">CCCD/CMND</label>
-                                <input type="number">
-                            </div>
-                            <div class="details">
-                                <label for="">Ngày cấp</label>
-                                <input type="date">
-                            </div>
-                            <div class="details">
-                                <label for="">Nơi cấp</label>
-                                <input type="text">
-                            </div>
+    <!-- Modal -->
+    <div class="modal" id="modal-name">
+        <div class="modal-sandbox"></div>
+        <div class="modal-box">
+            <div class="modal-header">
+                <div class="close-modal">&#10006;</div>
+                <h1>Nhập thông tin trình độ</h1>
+            </div>
+            <div class="modal-body">
+                <div class="f-grid">
+                    <div class="f-grid-col">
+                        <div class="details">
+                            <label for="">Từ năm</label>
+                            <input type="date">
                         </div>
+                        <div class="details">
+                            <label for="">Chế độ học</label>
+                            <select name="" id=""></select>
+                        </div>
+                        <div class="details">
+                            <label for="">Trường đào tạo</label>
+                            <select name="" id=""></select>
+                        </div>
+                        <div class="details">
+                            <label for="">Bằng cấp</label>
+                            <select name="" id=""></select>
+                        </div>
+                        <div class="details">
+                            <label for="">Kết quả</label>
+                            <select name="" id=""></select>
+                        </div>
+                        <div class="details">
+                            <label for="">Chuyên môn</label>
+                            <input type="text">
+                        </div>
+                        <div class="details">
+                            <label for="">Ngày cấp</label>
+                            <input type="date">
+                        </div>
+                    </div>
 
-                        <div class="f-grid-col">
-                            <div class="details">
-                                <img src="assets/img/nhalinh.png" alt="">
-                            </div>
-                            <div class="details">
-                                <div class="gender">
-                                    <label for="">Nam</label>
-                                    <input type="radio">
-                                </div>
-                                <div class=" gender">
-                                    <label for="">Nữ</label>
-                                    <input type="radio" checked>
-                                </div>
-                                <div class="gender">
-                                    <label for="">Khác</label>
-                                    <input type="radio">
-                                </div>
-                            </div>
+                    <div class="f-grid-col">
+                        <div class="details">
+                            <label for="">Đến năm</label>
+                            <input type="text">
+                        </div>
+                        <div class="details">
+                            <label for="">Loại đào tạo</label>
+                            <select name="" id=""></select>
+                        </div>
+                        <div class="details">
+                            <label for="">Ngành đào tạo</label>
+                            <select name="" id=""></select>
+                        </div>
+                        <div class="details">
+                            <label for="">Thời gian</label>
+                            <input type="text">
+                        </div>
+                        <div class="details">
+                            <label for="">Số bằng</label>
+                            <input type="text">
+                        </div>
+                        <div class="details">
+                            <label for="">Quốc gia</label>
+                            <select name="" id=""></select>
+                        </div>
+                        <div class="details">
+                            <label for="">Mô tả công việc</label>
+                            <textarea name="" id="" cols="90" rows="4"></textarea>
                         </div>
                     </div>
                 </div>
+                <button class="close-modal">Thoát</button>
+                <button class="close-modal">Thêm</button>
             </div>
         </div>
     </div>
     <script>
-        // lấy phần Modal
-        var modal = document.getElementById('myModal');
 
-        // Lấy phần button mở Modal
-        var btn = document.getElementById("myBtn");
+        $(".modal-trigger").click(function (e) {
+            e.preventDefault();
+            dataModal = $(this).attr("data-modal");
+            $("#" + dataModal).css({ "display": "block" });
+            // $("body").css({"overflow-y": "hidden"}); //Prevent double scrollbar.
+        });
 
-        // Lấy phần span đóng Modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // Khi button được click thi mở Modal
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
-
-        // Khi span được click thì đóng Modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-
-        // Khi click ngoài Modal thì đóng Modal
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
+        $(".close-modal, .modal-sandbox").click(function () {
+            $(".modal").css({ "display": "none" });
+            // $("body").css({"overflow-y": "auto"}); //Prevent double scrollbar.
+        });
     </script>
 </body>
 

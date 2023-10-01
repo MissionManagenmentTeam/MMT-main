@@ -128,6 +128,7 @@
                                     <th>Người ký</th>
                                     <th>Ngày ký</th>
                                     <th>Ngày hiệu lực</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -140,6 +141,11 @@
                                     <td>Ngô Văn Quỳnh</td>
                                     <td>05/07/2023</td>
                                     <td>05/07/2023</td>
+                                    <td>
+                                        <button class="update modal-trigger" data-modal="modal-name">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -150,6 +156,11 @@
                                     <td>Ngô Văn Quỳnh</td>
                                     <td>05/07/2023</td>
                                     <td>05/07/2023</td>
+                                    <td>
+                                        <button class="update modal-trigger" data-modal="modal-name">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
@@ -160,6 +171,11 @@
                                     <td>Ngô Văn Quỳnh</td>
                                     <td>05/07/2023</td>
                                     <td>05/07/2023</td>
+                                    <td>
+                                        <button class="update modal-trigger" data-modal="modal-name">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
@@ -170,6 +186,11 @@
                                     <td>Ngô Văn Quỳnh</td>
                                     <td>05/07/2023</td>
                                     <td>05/07/2023</td>
+                                    <td>
+                                        <button class="update modal-trigger" data-modal="modal-name">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </button>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -178,7 +199,111 @@
             </div>
         </div>
     </section>
-    <script src="assets/js/trinh-do.js"></script>
+
+    <!-- Modal kỉ luật -->
+    <div class="modal" id="modal-name">
+        <div class="modal-sandbox"></div>
+        <div class="modal-box">
+            <div class="modal-header">
+                <div class="close-modal" style="text-align: right;">&#10006;</div>
+                <h1 style="color: #fff;">Chi tiết kỉ luật</h1>
+            </div>
+            <div class="modal-body">
+                <div class="grid">
+                    <div class="grid-col">
+                        <div class="str">
+                            <strong>Nhân viên</strong>
+                        </div>
+                        <div class="lab">
+                            <label>Trần Thị Nhã Linh</label>
+                        </div>
+                    </div>
+                    <div class="grid-col">
+                        <div class="str">
+                            <strong>Hình thức</strong>
+                        </div>
+                        <div class="lab">
+                            <label>Khiển trách</label>
+                        </div>
+                    </div>
+                    <div class="grid-col">
+                        <div class="str">
+                            <strong>Từ ngày</strong>
+                        </div>
+                        <div class="lab">
+                            <label>02/05/2023</label>
+                        </div>
+                    </div>
+                    <div class="grid-col">
+                        <div class="str">
+                            <strong>Đến ngày</strong>
+                        </div>
+                        <div class="lab">
+                            <label>05/07/2023</label>
+                        </div>
+                    </div>
+                    <div class="grid-col">
+                        <div class="str">
+                            <strong>Lý do</strong>
+                        </div>
+                        <div class="lab">
+                            <label>Vi phạm 5Q</label>
+                        </div>
+                    </div>
+                    <div class="grid-col">
+                        <div class="str">
+                            <strong>Cấp quyết định</strong>
+                        </div>
+                        <div class="lab">
+                            <label>Ban Giám Đốc Công Ty</label>
+                        </div>
+                    </div>
+                    <div class="grid-col">
+                        <div class="str">
+                            <strong>Số quyết định</strong>
+                        </div>
+                        <div class="lab">
+                            <label>02/VQ-KDA</label>
+                        </div>
+                    </div>
+                    <div class="grid-col">
+                        <div class="str">
+                            <strong>Người kí</strong>
+                        </div>
+                        <div class="lab">
+                            <label>Ngô Văn Quỳnh</label>
+                        </div>
+                    </div>
+                    <div class="grid-col">
+                        <div class="str">
+                            <strong>Ngày kí</strong>
+                        </div>
+                        <div class="lab">
+                            <label>02/05/2023</label>
+                        </div>
+                    </div>
+                    <div class="grid-col">
+                        <div class="str">
+                            <strong>Ghi chú</strong>
+                        </div>
+                        <div class="lab">
+                            <label>Không có ghi chú</label>
+                        </div>
+                    </div>
+                    <div class="grid-col">
+                        <div class="str">
+                            <strong>Đính kèm</strong>
+                        </div>
+                        <div class="lab">
+                            <label></label>
+                        </div>
+                    </div>
+                </div>
+                <button class="close-modal">Lưu thay đổi</button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/nuoc-ngoai.js"></script>
 </body>
 
 </html>

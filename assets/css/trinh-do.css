@@ -84,6 +84,10 @@ ul li a:hover{
     color: #ffffff;
 }
 
+i{
+    padding-right: 10px;
+}
+
 .info{
     width: 89%;
     padding-left: 2px;
@@ -127,7 +131,6 @@ ul li a:hover{
 .grid-col{
     display: flex;
     text-align: left;
-    width: 50%;
 }
 
 .grid-col .str{
@@ -174,6 +177,7 @@ ul li a:hover{
     padding: 10px;
     text-align: right;
 }
+
 
 .btn i{
     padding-right: 5px;

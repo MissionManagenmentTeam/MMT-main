@@ -13,6 +13,19 @@ button.update{
     width: 100px;
 }
 
+button.close-modal{
+    font-weight: 400;
+    padding: 10px 10px;
+    color: red;
+    /* background: red; */
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid red;
+    outline: none;
+    transition: 0.2s;
+    width: 100px;
+}
+
 button.cancel{
     font-weight: 400;
     padding: 10px 10px;
@@ -87,6 +100,12 @@ ul li a:hover{
     height: 172px;
     border-radius: 10px;
 }
+
+.grid-body{
+    display: flex;
+    width: 100%;
+}
+
 .grid{
     width: 100%;
     padding: 5px;
@@ -96,7 +115,6 @@ ul li a:hover{
 .grid-col{
     display: flex;
     text-align: left;
-    width: 50%;
 }
 
 .grid-col .str{

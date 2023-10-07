@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Nhân Viên Chính Thức Trong Công Ty</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dsnv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="assets/img/logo1.jpg" class="logo" alt="" height="35"></a>
+        <div>
+            <ul id="menu">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-user"></i>
+                    </a>
+                    <ul class="dropdown_menu">
+                        <li>
+                            <a href="login.html">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="level">
+        <div class="menu">
+            <div class="bars">
+                <ul>
+                    <li><a href="thong-tin-nhan-vien.html">Thông tin nhân viên</a></li>
+                    <li><a href="trinh-do.html">Thông tin trình độ</a></li>
+                    <li><a href="doan-dang.html">Thông tin đoàn đảng</a></li>
+                    <li><a href="nuoc-ngoai.html">Đi nước ngoài</a></li>
+                    <li><a href="khen-thuong.html">Khen thưởng</a></li>
+                    <li><a href="ki-luat.html">Kỉ luật</a></li>
+                    <li><a href="qua-trinh-dao-tao-da-co.html">Quá trình đào tạo đã có</a></li>
+                    <li><a href="qua-trinh-dao-tao.html">Quá trình đào tạo</a></li>
+                    <li><a href="ch-tiet-ho-so-tuyen-dung.html">Chi tiết hồ sơ tuyển dụng</a></li>
+                    <li><a href="chi-tiet-ho-so-lien-quan.html">Chi tiết hồ sơ liên quan</a></li>
+                    <li><a href="thong-tin-gia-dinh.html">Thông tin gia đình</a></li>
+                    <li><a href="thong-tin-luc-nho.html">Thông tin lúc nhỏ</a></li>
+                    <li><a href="thong-tin-hop-dong-lao-dong.html">Thông tin hợp đồng lao động</a></li>
+                    <li><a href="qua-trinh-cong-tac.html">Quá trình công tác</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="info">
+            <br>
+            <label><i class="fa-solid fa-list"></i>Danh sách nhân viên trong công ty</label>
+            <hr>
+            <div id="table">
+                <!-- <div class="table__header">
+                    <div class="input-group">
+                        <input type="search" placeholder="Tìm kiếm...">
+                        <img src="assets/img/search.png" alt="">
+                    </div>
+                </div> -->
+                <div class="table__body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> STT <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Mã nhân viên <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Họ tên <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Ngày sinh <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Phòng ban <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Chức vụ<span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Ngày làm việc chính thức <span class="icon-arrow">&UpArrow;</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> 1 </td>
+                                <td>001</td>
+                                <td> Nhã Linh </td>
+                                <td> 05/07/2003 </td>
+                                <td> Hội đồng quản trị </td>
+                                <td>Chủ tịch HĐQT</td>
+                                <td>02/05/2023</td>
+                            </tr>
+                            <tr>
+                                <td> 2 </td>
+                                <td>002</td>
+                                <td> Nhã Linh </td>
+                                <td> 05/07/2003 </td>
+                                <td> Hội đồng quản trị </td>
+                                <td>Chủ tịch HĐQT</td>
+                                <td>02/05/2023</td>
+                            </tr>
+                            <tr>
+                                <td> 3</td>
+                                <td>003</td>
+                                <td> Nhã Linh </td>
+                                <td> 05/07/2003 </td>
+                                <td> Hội đồng quản trị </td>
+                                <td>Chủ tịch HĐQT</td>
+                                <td>02/05/2023</td>
+                            </tr>
+                            <tr>
+                                <td> 4</td>
+                                <td>004</td>
+                                <td> Nhã Linh </td>
+                                <td> 05/07/2003 </td>
+                                <td> Hội đồng quản trị </td>
+                                <td> Chủ tịch HĐQT</td>
+                                <td>02/05/2023</td>
+                            </tr>
+                            <tr>
+                                <td> 5</td>
+                                <td>005</td>
+                                <td> Nhã Linh </td>
+                                <td> 05/07/2003 </td>
+                                <td> Hội đồng quản trị </td>
+                                <td>Chủ tịch HĐQT</td>
+                                <td>02/05/2023</td>
+                            </tr>
+                            <tr>
+                                <td> 6</td>
+                                <td>006</td>
+                                <td> Nhã Linh </td>
+                                <td> 05/07/2003 </td>
+                                <td> Hội đồng quản trị </td>
+                                <td>Chủ tịch HĐQT</td>
+                                <td>02/05/2023</td>
+                            </tr>
+                            <tr>
+                                <td> 7</td>
+                                <td>007</td>
+                                <td> Nhã Linh </td>
+                                <td> 05/07/2003 </td>
+                                <td> Hội đồng quản trị </td>
+                                <td>Chủ tịch HĐQT</td>
+                                <td>02/05/2023</td>
+                            </tr>
+                            <tr>
+                                <td> 8</td>
+                                <td>008</td>
+                                <td> Nhã Linh </td>
+                                <td> 05/07/2003 </td>
+                                <td> Hội đồng quản trị </td>
+                                <td>Chủ tịch HĐQT</td>
+                                <td>02/05/2023</td>
+                            </tr>
+                            <tr>
+                                <td> 9</td>
+                                <td>009</td>
+                                <td> Nhã Linh </td>
+                                <td>05/07/2003</td>
+                                <td> Hội đồng quản trị </td>
+                                <td>Chủ tịch HĐQT</td>
+                                <td>02/05/2023 </td>
+                            </tr>
+                            <tr>
+                                <td> 10</td>
+                                <td>010</td>
+                                <td> Nhã Linh </td>
+                                <td>05/07/2003</td>
+                                <td> Hội đồng quản trị </td>
+                                <td>Chủ tịch HĐQT</td>
+                                <td>02/05/2023 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/dsnv.js"></script>
+</body>
+
+</html>

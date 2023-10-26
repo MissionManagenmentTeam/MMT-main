@@ -341,6 +341,11 @@ ul.dropdown_menu > li:hover > ul.submenu {
   width: 100%;
 }
 
+#feature .fe-box:nth-child(7) h6 {
+  background-color: #84effb;
+  width: 100%;
+}
+
 /* Nhân sự
 .tab-wrapper ul{
   overflow: hidden;

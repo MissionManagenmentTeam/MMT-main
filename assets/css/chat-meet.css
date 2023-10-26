@@ -1,0 +1,132 @@
+button.start{
+    font-weight: bold;
+    padding: 5px 10px;
+    color: red;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid red;
+    outline: none;
+    transition: 0.2s;
+    width: 200px;
+}
+
+button.add{
+    font-weight: bold;
+    padding: 5px 10px;
+    color: gray;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s;
+    width: 30px;
+}
+
+button.users{
+    font-weight: bold;
+    padding: 5px 10px;
+    color: gray;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s;
+    width: 30px;
+}
+
+.head{
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+.title{
+    width: 20%;
+}
+
+.btn{
+    width: 79%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.feat{
+    width: 20%;
+}
+
+.exch{
+    width: 79%;
+}
+
+
+.exch-title{
+    display: flex;
+}
+.img{
+    display: flex;
+    border-right: 1px solid gray;
+    padding: 0 10px 0 10px;
+}
+
+.img img{
+    width: 30px;
+    border-radius: 50%;
+}
+
+.img label{
+    justify-content: center;
+}
+.add-title{
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    width: 950px;
+}
+
+.btn-group{
+    text-align: right;
+    
+}
+
+.exch-meet{
+    text-align: center;
+
+    background-color: black;
+}
+
+.exch-meet img{
+    padding-top: 10px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+.meet-feat{
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meet-feat label{
+    margin: 5px;
+    padding: 20px 10px 10px 10px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    background-color: gray;
+    color: #ffffff;
+}
+
+input{
+    outline: none;
+    border: none;
+}

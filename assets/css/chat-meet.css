@@ -57,14 +57,16 @@ button.users{
     display: flex;
     align-items: center;
     width: 100%;
+    padding: 0 10px 0 10px;
 }
 
-.feat{
-    width: 20%;
+.sidebar{
+    width: 15%;
 }
 
 .exch{
-    width: 79%;
+    width: 85%;
+    /* border-left: 1px solid gray; */
 }
 
 
@@ -93,7 +95,7 @@ button.users{
 
 .btn-group{
     text-align: right;
-    
+    padding: 10px 0 10px 0;
 }
 
 .exch-meet{

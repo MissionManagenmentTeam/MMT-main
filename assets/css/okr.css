@@ -64,8 +64,19 @@ section.table {
     outline: none;
 }
 
-.table__body {
-    width: 95%;
+.table__body{
+    width: 100%;
+    display: flex;
+    padding: 0 5px 0 5px;
+    margin: 0;
+}
+
+.table__left{
+    width: 15%;
+}
+
+.table__right {
+    width: 85%;
     max-height: calc(89% - 1.6rem);
     background-color: #fffb;
     margin: .8rem auto;
@@ -74,18 +85,18 @@ section.table {
     overflow: overlay;
 }
 
-.table__body::-webkit-scrollbar{
+.table__right::-webkit-scrollbar{
     width: 0.5rem;
     height: 0.5rem;
 }
 
-.table__body::-webkit-scrollbar-thumb{
+.table__right::-webkit-scrollbar-thumb{
     border-radius: .5rem;
     background-color: #0004;
     visibility: hidden;
 }
 
-.table__body:hover::-webkit-scrollbar-thumb{ 
+.table__right:hover::-webkit-scrollbar-thumb{ 
     visibility: visible;
 }
 

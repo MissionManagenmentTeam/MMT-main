@@ -73,6 +73,7 @@ section.table {
 
 .table__left{
     width: 15%;
+    line-height: 25px;
 }
 
 .table__right {

@@ -402,3 +402,7 @@ thead th.active,tbody td.active {
 input{
     background-color: #b8dbf5;
 }
+
+a{
+    font-weight: 600;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OKRs</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/okr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+
+<body style="background-color: #fbfbfb;">
+    <section id="header">
+        <a href="#"><img src="assets/img/logo1.jpg" class="logo" alt="" height="35"></a>
+        <div>
+            <ul id="menu">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-user"></i>
+                    </a>
+                    <ul class="dropdown_menu">
+                        <li>
+                            <a href="login.html">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="grid">
+        <div class="grid_header">
+            <div class="btn">
+                <button class="save"><i class="fa-solid fa-check"></i> Lưu</button>
+                <button class="cancel"><i class="fa-solid fa-rectangle-xmark"></i> Hủy</button>
+            </div>
+        </div>
+        <hr>
+        <div class="grid_body">
+            <div class="f-grid">
+                <div class="f-grid-col">
+                    <div class="details">
+                        <strong for="">Năm</strong>
+                        <input type="text">
+                    </div>
+                    <div class="details">
+                        <strong for="">Quý</strong>
+                        <select name="" id=""></select>
+                    </div>
+                    <div class="details">
+                        <strong for="">Tiêu đề</strong>
+                        <input type="text">
+                    </div>
+                    <div class="details">
+                        <strong for="">Mô tả</strong>
+                        <textarea placeholder="Mô tả về mục tiêu này" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="details">
+                        <strong for="">Mục tiêu</strong>
+                        <select name="" id=""></select>
+                    </div>
+                    <div class="details">
+                        <strong for="">Kiểu</strong>
+                        <input type="text">
+                    </div>
+                    <div class="details">
+                        <strong for="">Kết quả then chốt</strong>
+                        <select name="" id=""></select>
+                    </div>
+                    <div class="details">
+                        <strong for="">Điểm</strong>
+                        <input type="text">
+                    </div>
+                    <div class="details">
+                        <strong for="">Tiến trình</strong>
+                        <input type="range" value="20">
+                    </div>
+                    <div class="details">
+                        <strong for="">Chủ sở hữu</strong>
+                        <label>Admin</label>
+                    </div>
+                    <div class="details">
+                        <strong for="">Kết quả</strong>
+                        <select>
+                            <option value="0"></option>
+                            <option value="1">Thành công</option>
+                            <option value="2">Thất bại</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="table_">
+        <div class="table__header">
+            <a href="">Kết quả then chốt</a>
+        </div>
+        <div class="table__body">
+
+            <div class="table__right">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tiêu đề</th>
+                            <th>Mục tiêu</th>
+                            <th>Khung TG</th>
+                            <th>Chủ sở hữu</th>
+                            <th>Phòng ban</th>
+                            <th>Tiến trình</th>
+                            <th>Kiểu</th>
+                            <th>SL kết quả then chốt</th>
+                            <th>Trạng thái</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/ork.js"></script>
+</body>
+
+</html>

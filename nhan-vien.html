@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhân viên</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/nhan-vien.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+
+<body style="background-color: #fbfbfb;">
+    <section id="header">
+        <a href="#"><img src="assets/img/logo1.jpg" class="logo" alt="" height="35"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Tất cả</a></li>
+                <li><a class="active" href="nhan-su.html">Nhân sự</a></li>
+                <li><a href="tieu-bieu.html">Thiết lập công việc</a></li>
+                <li><a href="#">Đánh giá 360</a></li>
+            </ul>
+        </div>
+        <a href="#"><img src="assets/img/logo.png" class="logo" alt="" width="35" height="35"></a>
+    </section>
+    <section id="profile">
+        <div class="profile-details">
+            <div class="card">
+                <img src="assets/img/avt1.jpg" alt="John" style="width: 100px;height: 100px;">
+                <div>
+                    <div class="company">
+                        <h4 style="color: blue;">FPT00001</h4>
+                        <h5 style="color: green;">Đang làm việc</h5>
+                    </div>
+                    <hr>
+                    <div class="people">
+                        <div class="details">
+                            <i class='bx bxs-user'></i>
+                            <h5>Huỳnh Thái Dân</h5>
+                        </div>
+                        <div class="details">
+                            <i class='bx bxs-business'></i>
+                            <h5>ABCXYZ</h5>
+                        </div>
+                        <div class="details">
+                            <i class='bx bxs-user-pin'></i>
+                            <h5>Nhân viên</h5>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="people">
+                        <div class="details">
+                            <i class='bx bxs-phone'></i>
+                            <h5>0969792731</h5>
+                        </div>
+                        <div class="details">
+                            <i class='bx bxs-envelope'></i>
+                            <h5>danhtps19893@fpt.edu.vn</h5>
+                        </div>
+                        <div class="details">
+                            <i class='bx bxs-calendar'></i>
+                            <h5>28/01/2003</h5>
+                        </div>
+                        <div class="details">
+                            <i class="fa-solid fa-mars-and-venus"></i>
+                            <h5>Nam</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-details">
+            <div class="container">
+                <div class="tab-wrapper">
+                    <ul class="tab">
+                        <li>
+                            <a href="#tab-main-info">Thông tin</a>
+                        </li>
+                        <li>
+                            <a href="#tab-ktkl">Khen thưởng - Kỉ luật</a>
+                        </li>
+                        <li>
+                            <a href="#tab-hs">Hồ sơ</a>
+                        </li>
+                        <li>
+                            <a href="#tab-nl">Năng lực</a>
+                        </li>
+                        <li>
+                            <a href="#tab-ts">Tài sản</a>
+                        </li>
+                        <li>
+                            <a href="#tab-cv">Công việc</a>
+                        </li>
+                        <li>
+                            <a href="#tab-bh">Bảo hiểm</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-item" id="tab-main-info">
+                            <div class="f-grid">
+                                <div class="f-grid-col">
+                                    <div class="details">
+                                        <label for="">Họ khai sinh</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Bí danh</label>
+                                        <input type="text" id="inp">
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Ngày sinh</label>
+                                        <input type="date">
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Giới tính</label>
+                                        <select name="" id="">
+                                            <option value="0">Chọn giới tính</option>
+                                            <option value="1">Nam</option>
+                                            <option value="2">Nữ</option>
+                                            <option value="3">Khác</option>
+                                        </select>
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Tỉnh/Thành phố quê quán</label>
+                                        <select id="tinh">
+                                            <option value="">Chọn</option>
+                                        </select>
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Tỉnh/Thành phố thường trú</label>
+                                        <select id="province">
+                                            <option value="">Chọn</option>
+                                        </select>
+                                    </div>
+                                    <!-- <div class="details">
+                                        <label for="">Tỉnh/Thành phố tạm trú</label>
+                                        <select class="form-select form-select-sm mb-3" id="city" aria-label=".form-select-sm">
+                                            <option value="" selected>Chọn</option>
+                                        </select>
+                                    </div> -->
+                                    <div class="details">
+                                        <label for="">Thành phần gia đình</label>
+                                        <select name="" id=""></select>
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Phòng ban</label>
+                                        <select name="" id=""></select>
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Chiều cao</label>
+                                        <input type="number">
+                                    </div>
+                                </div>
+
+                                <div class="f-grid-col">
+                                    <div class="details">
+                                        <label for="">Tên khai sinh</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Quốc tịch</label>
+                                        <select name="" id="">
+
+                                        </select>
+                                    </div>
+                                    <div class="details">
+                                        <label for="">CCCD/CMND</label>
+                                        <input type="number">
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Hình ảnh cá nhân</label>
+                                        <input type="file">
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Huyện/Quận quê quán</label>
+                                        <select id="huyen">
+                                            <option value="">Chọn</option>
+                                        </select>
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Huyện/Quận thường trú</label>
+                                        <select id="district">
+                                            <option value="">Chọn</option>
+                                        </select>
+                                    </div>
+                                    <!-- <div class="details">
+                                        <label for="">Huyện/Quận tạm trú</label>
+                                        <select class="form-select form-select-sm mb-3" id="district" aria-label=".form-select-sm">
+                                            <option value="" selected>Chọn</option>
+                                        </select>
+                                    </div> -->
+                                    <div class="details">
+                                        <label for="">Số điện thoại gia đình</label>
+                                        <input type="tel">
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Công việc</label>
+                                        <select name="" id=""></select>
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Nhân dạng</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+
+                                <div class="f-grid-col">
+                                    <div class="details">
+                                        <label for="">Họ thường dùng</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Dân tộc</label>
+                                        <select name="" id=""></select>
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Ngày cấp</label>
+                                        <input type="date">
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Hộ chiếu</label>
+                                        <input type="number">
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Xã/Phường quê quán</label>
+                                        <select id="xa">
+                                            <option value="" selected>Chọn</option>
+                                        </select>
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Xã/Phường thường trú</label>
+                                        <select id="ward">
+                                            <option value="" selected>Chọn</option>
+                                        </select>
+                                    </div>
+                                    <!-- <div class="details">
+                                        <label for="">Xã/Phường tạm trú</label>
+                                        <select class="form-select form-select-sm" id="ward" aria-label=".form-select-sm">
+                                            <option value="" selected>Chọn</option>
+                                        </select>
+                                    </div> -->
+                                    <div class="details">
+                                        <label for="">Số điện thoại cá nhân</label>
+                                        <input type="tel">
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Chức vụ</label>
+                                        <select name="" id=""></select>
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Ngày nghỉ việc</label>
+                                        <input type="date">
+                                    </div>
+                                </div>
+
+                                <div class="f-grid-col">
+                                    <div class="details">
+                                        <label for="">Tên thường dùng</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Tôn giáo</label>
+                                        <select name="" id=""></select>
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Nơi cấp CCCD/CMND</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Nơi cấp Hộ chiếu</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Địa chỉ quê quán</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Địa chỉ thường trú</label>
+                                        <input type="text">
+                                    </div>
+                                    <!-- <div class="details">
+                                        <label for="">Địa chỉ tạm trú</label>
+                                        <input type="text">
+                                    </div> -->
+                                    <div class="details">
+                                        <label for="">Email</label>
+                                        <input type="email">
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Bậc lương</label>
+                                        <select name="" id=""></select>
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Lý do nghỉ việc</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <button class="table"><i class='bx bxs-save'></i>Cập nhật</button>
+                                <button class="table"><i class='bx bxs-download'></i> Tải xuống</button>
+                            </div>
+                        </div>
+
+                        <div class="tab-item" id="tab-ktkl">
+                            <div class="venus">
+                                <i class='bx bxs-medal'></i><label for="">Khen thưởng</label>
+                                <table width="100%">
+                                    <thead>
+                                        <th>Số thứ tự</th>
+                                        <th>Số phiếu</th>
+                                        <th>Ngày ra quyết định</th>
+                                        <th>Giá trị</th>
+                                        <th>Hình thức</th>
+                                        <th>Trạng thái</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>KT0001</td>
+                                            <td>Huỳnh Thái Dân</td>
+                                            <td>2.000.000</td>
+                                            <td>Chuyển khoản</td>
+                                            <td>Đã xác nhận</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>KT0002</td>
+                                            <td>Huỳnh Thái Dân</td>
+                                            <td>500.000</td>
+                                            <td>Tiền mặt</td>
+                                            <td>Đã xác nhận</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>KT0003</td>
+                                            <td>Huỳnh Thái Dân</td>
+                                            <td>1.400.000</td>
+                                            <td>Chuyển khoản</td>
+                                            <td>Đã xác nhận</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="venus">
+                                <i class='bx bxs-error-alt'></i><label for="">Kỉ luật</label>
+                                <table width="100%">
+                                    <thead>
+                                        <th>Số thứ tự</th>
+                                        <th>Số phiếu</th>
+                                        <th>Ngày ra quyết định</th>
+                                        <th>Giá trị</th>
+                                        <th>Hình thức</th>
+                                        <th>Trạng thái</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>KL0001</td>
+                                            <td>Huỳnh Thái Dân</td>
+                                            <td>2.000.000</td>
+                                            <td>Chuyển khoản</td>
+                                            <td>Đã xác nhận</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>KL0002</td>
+                                            <td>Huỳnh Thái Dân</td>
+                                            <td>500.000</td>
+                                            <td>Tiền mặt</td>
+                                            <td>Đã xác nhận</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>KL0003</td>
+                                            <td>Huỳnh Thái Dân</td>
+                                            <td>1.400.000</td>
+                                            <td>Chuyển khoản</td>
+                                            <td>Đã xác nhận</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="tab-item" id="tab-hs">
+                            <div class="venus">
+                                <i class='bx bxs-book-reader'></i><label for="">Bằng cấp</label>
+                                <table width="100%">
+                                    <thead>
+                                        <th>STT</th>
+                                        <th>Bằng cấp</th>
+                                        <th>Trình độ chuyên môn</th>
+                                        <th>Nơi tốt nghiệp</th>
+                                        <th>Năm tốt nghiệp</th>
+                                        <th>File đính kèm</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Đại học</td>
+                                            <td>Địa lý học</td>
+                                            <td>TP.Hồ Chí Minh</td>
+                                            <td>2023</td>
+                                            <td><button class="normal"><i class='bx bxs-plus-square'></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Đại học</td>
+                                            <td>Địa lý học</td>
+                                            <td>TP.Hồ Chí Minh</td>
+                                            <td>2023</td>
+                                            <td><button class="normal"><i class='bx bxs-plus-square'></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Đại học</td>
+                                            <td>Địa lý học</td>
+                                            <td>TP.Hồ Chí Minh</td>
+                                            <td>2023</td>
+                                            <td><button class="normal"><i class='bx bxs-plus-square'></i></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="venus">
+                                <i class='bx bxs-detail'></i><label for="">Hồ sơ</label>
+                                <table width="100%">
+                                    <thead>
+                                        <th>STT</th>
+                                        <th>Loại hồ sơ</th>
+                                        <th>File đính kèm</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="">CCCD/CMND</option>
+                                                    <option value="">Passport</option>
+                                                    <option value="">Bằng lái xe</option>
+                                                </select>
+                                            </td>
+                                            <td><button class="normal"><i class='bx bxs-plus-square'></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="">CCCD/CMND</option>
+                                                    <option value="">Passport</option>
+                                                    <option value="">Bằng lái xe</option>
+                                                </select>
+                                            </td>
+                                            <td><button class="normal"><i class='bx bxs-plus-square'></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="">CCCD/CMND</option>
+                                                    <option value="">Passport</option>
+                                                    <option value="">Bằng lái xe</option>
+                                                </select>
+                                            </td>
+                                            <td><button class="normal"><i class='bx bxs-plus-square'></i></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="venus">
+                                <i class='bx bxs-minus-circle'></i><label for="">Giảm trừ gia cảnh</label>
+                                <table width="100%">
+                                    <thead>
+                                        <th>STT</th>
+                                        <th>Tên người quan hệ</th>
+                                        <th>Mối quan hệ</th>
+                                        <th>Nghề nghiệp</th>
+                                        <th>Số điện thoại</th>
+                                        <th>File đính kèm</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>ABCXYZ</td>
+                                            <td>Bố</td>
+                                            <td>Chủ tịch</td>
+                                            <td>0969792731</td>
+                                            <td><button class="normal"><i class='bx bxs-plus-square'></i></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="tab-item" id="tab-nl">
+                            <div class="row">
+                                <button class="table"><i class='bx bxs-save'></i>Cập nhật</button>
+                            </div>
+                            <div class="venus">
+                                <i class='bx bxs-analyse'></i><label for="">Lịch sử điều chuyển - Bổ nhiệm</label>
+                                <table width="100%">
+                                    <thead>
+                                        <th>STT</th>
+                                        <th>Số phiếu</th>
+                                        <th>Phòng ban chuyển tới</th>
+                                        <th>Nội dung</th>
+                                        <th>Trạng thái</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <p class="lb2">000001</p>
+                                                <p class="lb1"><i class='bx bxs-calendar'></i>01/01/2021</p>
+                                            </td>
+                                            <td>Phòng tổng giám đốc</td>
+                                            <td>Thăng chức Tổng giảm đốc</td>
+                                            <td>
+                                                <p class="lb2">Đã duyệt</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="venus">
+                                <i class='bx bxs-detail'></i><label for="">Chuyên môn - Kỹ năng</label>
+                                <div class="venus-tab">
+                                    <i class='bx bxs-chevrons-right'></i><label>Chuyên môn</label>
+                                    <table width="100%">
+                                        <thead>
+                                            <th>STT</th>
+                                            <th>Tên chuyên môn</th>
+                                            <th>Số năm kinh nghiệm yêu cầu</th>
+                                            <th>Số năm kinh nghiệm thực tế</th>
+                                            <th>File đính kèm</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Chuyên viên kĩ thuật</td>
+                                                <td>4</td>
+                                                <td><input type="text" name="" id=""></td>
+                                                <td><button class="normal"><i class='bx bxs-plus-square'></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Lập trình viên</td>
+                                                <td>3</td>
+                                                <td><input type="text" name="" id=""></td>
+                                                <td><button class="normal"><i class='bx bxs-plus-square'></i></button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="venus-tab">
+                                    <i class='bx bxs-chevrons-right'></i><label>Kĩ năng</label>
+                                    <table width="100%">
+                                        <thead>
+                                            <th>STT</th>
+                                            <th>Tên kỹ năng</th>
+                                            <th>Số năm kinh nghiệm yêu cầu</th>
+                                            <th>Số năm kinh nghiệm thực tế</th>
+                                            <th>Lưu</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>ReactJs</td>
+                                                <td>1</td>
+                                                <td><input type="text" name="" id=""></td>
+                                                <td><button class="normal"><i class='bx bxs-plus-square'></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>EmberJs</td>
+                                                <td>1</td>
+                                                <td><input type="text" name="" id=""></td>
+                                                <td><button class="normal"><i class='bx bxs-plus-square'></i></button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-item" id="tab-ts">
+                            <div class="venus">
+                                <table width="100%">
+                                    <thead>
+                                        <th>STT</th>
+                                        <th>Mã tài sản</th>
+                                        <th>Tên tài sản</th>
+                                        <th>Thông số kĩ thuật</th>
+                                        <th>Đơn vị tính</th>
+                                        <th>Số lượng</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <p class="lb2">TS001</p>
+                                            </td>
+                                            <td>Macbook</td>
+                                            <td>Air M1</td>
+                                            <td>Chiếc</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <p class="lb2">TS002</p>
+                                            </td>
+                                            <td>Audi</td>
+                                            <td>A7</td>
+                                            <td>Chiếc</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>
+                                                <p class="lb2">TS003</p>
+                                            </td>
+                                            <td>Nhà cấp 1</td>
+                                            <td>3 tầng</td>
+                                            <td>Căn</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="tab-item" id="tab-bh">
+                            <div class="f-grid">
+                                <div class="f-grid-col">
+                                    <div class="details">
+                                        <label for="">Số sổ bảo hiểm</label>
+                                        <input type="text" value="777403125" disabled
+                                            style="background-color: #DFDFDE;">
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Trạng thái</label>
+                                        <input type="text" value="Đã tham gia" disabled
+                                            style="background-color: #DFDFDE;">
+                                    </div>
+                                </div>
+
+                                <div class="f-grid-col">
+                                    <div class="details">
+                                        <label for="">Phòng ban</label>
+                                        <input type="text" value="Phòng hành chính" disabled
+                                            style="background-color: #DFDFDE;">
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Số thẻ bảo hiểm</label>
+                                        <input type="text" value="1234567890" disabled
+                                            style="background-color: #DFDFDE;">
+                                    </div>
+                                </div>
+
+                                <div class="f-grid-col">
+                                    <div class="details">
+                                        <label for="">Nơi đăng kí khám bệnh </label>
+                                        <input type="text" value="Bệnh viện Gò Vấp" disabled
+                                            style="background-color: #DFDFDE;">
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Mức đóng</label>
+                                        <input type="text" value="500.000" disabled style="background-color: #DFDFDE;">
+                                    </div>
+                                </div>
+
+                                <div class="f-grid-col">
+                                    <div class="details">
+                                        <label for="">Trình trạng nộp sổ bảo hiểm</label>
+                                        <input type="text" value="Không" disabled style="background-color: #DFDFDE;">
+                                    </div>
+                                    <div class="details">
+                                        <label for="">Thời gian</label>
+                                        <input type="text" value="01/01/2022 - 31/12/2023" disabled
+                                            style="background-color: #DFDFDE;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="assets/js/nhan-vien.js"></script>
+    <script>
+        var citis = document.getElementById("city");
+        var districts = document.getElementById("district");
+        var wards = document.getElementById("ward");
+        var Parameter = {
+            url: "https://raw.githubusercontent.com/kenzouno1/DiaGioiHanhChinhVN/master/data.json",
+            method: "GET",
+            responseType: "application/json",
+        };
+        var promise = axios(Parameter);
+        promise.then(function (result) {
+            renderCity(result.data);
+        });
+
+        function renderCity(data) {
+            for (const x of data) {
+                citis.options[citis.options.length] = new Option(x.Name, x.Id);
+            }
+            citis.onchange = function () {
+                district.length = 1;
+                ward.length = 1;
+                if (this.value != "") {
+                    const result = data.filter(n => n.Id === this.value);
+
+                    for (const k of result[0].Districts) {
+                        district.options[district.options.length] = new Option(k.Name, k.Id);
+                    }
+                }
+            };
+            district.onchange = function () {
+                ward.length = 1;
+                const dataCity = data.filter((n) => n.Id === citis.value);
+                if (this.value != "") {
+                    const dataWards = dataCity[0].Districts.filter(n => n.Id === this.value)[0].Wards;
+
+                    for (const w of dataWards) {
+                        wards.options[wards.options.length] = new Option(w.Name, w.Id);
+                    }
+                }
+            };
+        }
+    </script>
+</body>
+
+</html>

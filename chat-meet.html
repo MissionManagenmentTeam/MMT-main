@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thảo luận</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/chat-meet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="assets/img/logo1.jpg" class="logo" alt="" height="35"></a>
+        <div>
+            <ul id="menu">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-user"></i>
+                    </a>
+                    <ul class="dropdown_menu">
+                        <li>
+                            <a href="login.html">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="main">
+        <div class="head">
+            <div class="title">
+                <label> <i class="fa-regular fa-comments"></i> Thảo luận</label>
+            </div>
+            <div class="btn">
+                <button class="start">Bắt đầu cuộc họp</button>
+            </div>
+        </div>
+        <div class="body">
+            <div class="sidebar">
+                <ul class="mess">
+                    <li>
+                        <i class="fa-solid fa-box"></i> Hộp thư đến
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-heart"></i> Yêu thích
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-clock"></i> Lịch sử
+                    </li>
+                </ul>
+                <hr>
+                <ul class="key">
+
+                </ul>
+            </div>
+
+            <div class="exch">
+                <div class="exch-title">
+                    <div class="img">
+                        <label><img src="assets/img/avt/avt1.jpg"> Nickname 1</label>
+                    </div>
+                    <div class="add-title">
+                        <input type="text" placeholder="Thêm mô tả">
+                    </div>
+                    <div class="btn-group">
+                        <button class="add"><i class="fa-solid fa-user-plus"></i></button>
+                        <button class="users"><i class="fa-solid fa-users"></i></button>
+                    </div>
+                </div>
+                <div class="exch-meet">
+                    <img src="assets/img/avt/avt1.jpg">
+                    <div class="meet-feat">
+                        <label><i class="fa-solid fa-microphone"></i></label>
+                        <label><i class="fa-solid fa-headphones"></i></label>
+                        <label><i class="fa-solid fa-video"></i></label>
+                        <label><i class="fa-solid fa-desktop"></i></label>
+                        <label><i class="fa-solid fa-ellipsis"></i></label>
+                        <label style="background-color: red;"><i class="fa-solid fa-phone"></i></label>
+                    </div>
+                </div>
+                <div class="exch-chat">
+                    <div class="footer-chat">
+                        <i class="fa-regular fa-face-smile clickable" style="font-size:15pt;" aria-hidden="true"></i>
+                        <i class="fa-solid fa-paperclip clickable" style="font-size:15pt;" aria-hidden="true"></i>
+                        <input type="text" class="write-message" placeholder="Nhập tin nhắn"></input>
+                        <i class="fa-regular fa-paper-plane clickable" style="color: blue;" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="assets/js/chat-meet.js"></script>
+
+</html>

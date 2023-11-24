@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý nhân sự và đánh giá</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="assets/img/logo1.jpg" class="logo" alt="" height="35"></a>
+        <div>
+            <ul id="menu">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-user"></i>
+                    </a>
+                    <ul class="dropdown_menu">
+                        <li>
+                            <a href="login.html">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="search-box">
+        <div class="input-group">
+            <input type="search" id="search" placeholder="Tìm kiếm menu" onkeyup="search()">
+            <img src="assets/img/search.png" alt="">
+        </div>
+    </section>
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="assets/img/x/7.png" alt="">
+            <h6><a href="">Thảo luận</a></h6>
+        </div>
+        <div class="fe-box">
+            <img src="assets/img/x/1.png" alt="">
+            <h6><a href="nhan-su.html">Nhân viên</a></h6>
+        </div>
+        <div class="fe-box">
+            <img src="assets/img/x/2.png" alt="">
+            <h6><a href="">Phòng ban</a></h6>
+        </div>
+        <div class="fe-box">
+            <img src="assets/img/x/3.png" alt="">
+            <h6><a href="okr.html">OKRs</a></h6>
+        </div>
+        <div class="fe-box">
+            <img src="assets/img/x/4.png" alt="">
+            <h6><a href="tieu-bieu.html">Thống kê</a></h6>
+        </div>
+        <div class="fe-box">
+            <img src="assets/img/x/5.png" alt="">
+            <h6><a href="">Khen thưởng - Kỉ luật</a></h6>
+        </div>
+        <div class="fe-box">
+            <img src="assets/img/x/6.png" alt="">
+            <h6><a href="nv.html">Thiết lập</a></h6>
+        </div>
+    </section>
+    <script src="assets/js/main.js"></script>
+    <script>
+        const search = () => {
+            const searchBox = document.getElementById("search").value.toUpperCase();
+            const memItem = document.getElementById("feature");
+            const member = document.querySelectorAll(".fe-box");
+            const memName = memItem.getElementsByTagName("h6");
+
+            for (var i = 0; i < memName.length; i++) {
+                let match = member[i].getElementsByTagName('h6')[0];
+
+                if (match) {
+                    let textValue = match.textContent || match.innerHTML
+
+                    if (textValue.toUpperCase().indexOf(searchBox) > -1) {
+                        member[i].style.display = "";
+                    } else {
+                        member[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
